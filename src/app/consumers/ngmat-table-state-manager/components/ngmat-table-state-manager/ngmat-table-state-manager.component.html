@@ -1,5 +1,12 @@
 <div style="padding: 50px;">
-  <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z4">
+  <table
+  mat-table
+  [dataSource]="dataSource"
+  matSort
+  matSortActive="name"
+  matSortDirection="desc"
+  ngMatSqp
+  class="mat-elevation-z4">
 
     <!-- Position Column -->
     <ng-container matColumnDef="position">
