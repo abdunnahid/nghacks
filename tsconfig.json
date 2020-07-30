@@ -12,6 +12,12 @@
     },
     {
       "path": "./tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngmat-table-state-manager/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ngmat-table-state-manager/tsconfig.spec.json"
     }
 ]
 }

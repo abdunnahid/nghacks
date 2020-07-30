@@ -123,6 +123,46 @@
           }
         }
       }
+    },
+    "ngmat-table-state-manager": {
+      "projectType": "library",
+      "root": "projects/ngmat-table-state-manager",
+      "sourceRoot": "projects/ngmat-table-state-manager/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngmat-table-state-manager/tsconfig.lib.json",
+            "project": "projects/ngmat-table-state-manager/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngmat-table-state-manager/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngmat-table-state-manager/src/test.ts",
+            "tsConfig": "projects/ngmat-table-state-manager/tsconfig.spec.json",
+            "karmaConfig": "projects/ngmat-table-state-manager/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngmat-table-state-manager/tsconfig.lib.json",
+              "projects/ngmat-table-state-manager/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "ng-libs"
 }
