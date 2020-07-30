@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgmatTableStateManagerModule } from 'ngmat-table-state-manager';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgmatTableStateManagerConsumerModule } from './consumers/ngmat-table-state-manager/ngmat-table-state-manager.consumer.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { NgmatTableStateManagerModule } from 'ngmat-table-state-manager';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgmatTableStateManagerModule
+    BrowserAnimationsModule,
+    NgmatTableStateManagerConsumerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
