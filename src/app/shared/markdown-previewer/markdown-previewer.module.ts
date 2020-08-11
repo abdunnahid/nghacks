@@ -4,6 +4,7 @@ import { MarkdownModule } from 'ngx-markdown';
 import { HttpClient } from '@angular/common/http';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 import { MarkdownPreviewerComponent } from './markdown-previewer.component';
 import { MarkdownDialogPreviewComponent } from './components/markdown-dialog-preview/markdown-dialog-preview.component';
@@ -17,6 +18,7 @@ import { MarkdownDialogPreviewComponent } from './components/markdown-dialog-pre
     CommonModule,
     MatButtonModule,
     MatDialogModule,
+    MatProgressSpinnerModule,
     MarkdownModule.forRoot({ loader: HttpClient })
   ],
   exports: [
