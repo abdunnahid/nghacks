@@ -31,7 +31,7 @@ jobs:
         run: npm run build:prod:ngmat-table-state-manager
 
       - name: Publish
-        working-directory: dist/ngmat-table-query-reflector
         uses: JS-DevTools/npm-publish@v1
         with:
+          package: dist/ngmat-table-query-reflector/package.json
           token: ${{ secrets.NPM_AUTH_TOKEN }}
