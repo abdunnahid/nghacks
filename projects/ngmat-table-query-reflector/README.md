@@ -2,14 +2,14 @@
 
 An Angular Module that exports a directive to reflect material table states(sorting & pagination) on URL Query Params.
 
-[Live Preview](https://ng-hack.web.app)
+[Live Preview](https://ng-hack.web.app/mat-table-query-reflector)
 
 ## How to use
 
 > Install package
 
 ```bash
-npm install ngmat-table-query-reflector
+npm install @nghacks/ngmat-table-query-reflector
 ```
 
 > Import `NgmatTableQueryReflectorModule` to your consumer module.
@@ -18,7 +18,7 @@ npm install ngmat-table-query-reflector
 import { NgModule } from '@angular/core';
 ...
 ...
-import { NgmatTableQueryReflectorModule } from 'ngmat-table-query-reflector';
+import { NgmatTableQueryReflectorModule } from '@nghacks/ngmat-table-query-reflector';
 
 @NgModule({
   declarations: [

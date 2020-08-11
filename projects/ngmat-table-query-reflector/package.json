@@ -1,14 +1,16 @@
 {
-  "name": "ngmat-table-query-reflector",
-  "version": "1.0.0",
+  "name": "@nghacks/ngmat-table-query-reflector",
+  "version": "0.1.0",
   "peerDependencies": {
     "@angular/common": "^10.0.5",
     "@angular/core": "^10.0.5",
     "@angular/cdk": "^10.1.1",
     "@angular/material": "^10.1.1",
-    "rxjs": "~6.5.5"
-  },
-  "dependencies": {
+    "rxjs": "~6.5.5",
     "tslib": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abdunnahid/nghacks.git"
   }
 }

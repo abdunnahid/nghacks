@@ -7,4 +7,4 @@ Useful reusable pieces built with Angular & Angular Material using some sort of 
 
 An Angular Module that exports a directive to reflect material table states(sorting & pagination) on URL Query Params.
 
-[Live Preview](https://ng-hack.web.app)
+[Live Preview](https://ng-hack.web.app/mat-table-query-reflector)
