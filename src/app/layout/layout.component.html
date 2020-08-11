@@ -1,0 +1,100 @@
+<progressbar *ngIf="showProgressbar"></progressbar>
+
+<div class="layout">
+
+  <mat-drawer-container>
+
+    <mat-drawer #sidenavDrawer mode="side" [autoFocus]="false">
+      <section class="side-nav-container">
+        <sidenav></sidenav>
+      </section>
+    </mat-drawer>
+
+    <mat-drawer-content>
+
+      <section class="top-nav-container">
+        <topnav [hideMenuToggleButton]="sidenavDrawer.openedChange | async"></topnav>
+      </section>
+
+      <section class="content" *ngIf="loadContent; else loadingContent">
+        <notice></notice>
+        <router-outlet></router-outlet>
+      </section>
+      <ng-template #loadingContent>
+        <section class="content-loading">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            style="margin:auto;background:transparent;display:block;" width="80px" height="80px" viewBox="0 0 100 100"
+            preserveAspectRatio="xMidYMid">
+            <g transform="translate(20 20)">
+              <rect x="-15" y="-15" width="30" height="30" fill="#e76f51" transform="scale(0.643177 0.643177)">
+                <animateTransform attributeName="transform" type="scale" repeatCount="indefinite" calcMode="spline"
+                  dur="1s" values="1;1;0.2;1;1" keyTimes="0;0.2;0.5;0.8;1"
+                  keySplines="0.5 0.5 0.5 0.5;0 0.1 0.9 1;0.1 0 1 0.9;0.5 0.5 0.5 0.5" begin="-0.4s"></animateTransform>
+              </rect>
+            </g>
+            <g transform="translate(50 20)">
+              <rect x="-15" y="-15" width="30" height="30" fill="#ffa194" transform="scale(0.382764 0.382764)">
+                <animateTransform attributeName="transform" type="scale" repeatCount="indefinite" calcMode="spline"
+                  dur="1s" values="1;1;0.2;1;1" keyTimes="0;0.2;0.5;0.8;1"
+                  keySplines="0.5 0.5 0.5 0.5;0 0.1 0.9 1;0.1 0 1 0.9;0.5 0.5 0.5 0.5" begin="-0.3s"></animateTransform>
+              </rect>
+            </g>
+            <g transform="translate(80 20)">
+              <rect x="-15" y="-15" width="30" height="30" fill="#2a9d8f" transform="scale(0.213342 0.213342)">
+                <animateTransform attributeName="transform" type="scale" repeatCount="indefinite" calcMode="spline"
+                  dur="1s" values="1;1;0.2;1;1" keyTimes="0;0.2;0.5;0.8;1"
+                  keySplines="0.5 0.5 0.5 0.5;0 0.1 0.9 1;0.1 0 1 0.9;0.5 0.5 0.5 0.5" begin="-0.2s"></animateTransform>
+              </rect>
+            </g>
+            <g transform="translate(20 50)">
+              <rect x="-15" y="-15" width="30" height="30" fill="#ffa194" transform="scale(0.382764 0.382764)">
+                <animateTransform attributeName="transform" type="scale" repeatCount="indefinite" calcMode="spline"
+                  dur="1s" values="1;1;0.2;1;1" keyTimes="0;0.2;0.5;0.8;1"
+                  keySplines="0.5 0.5 0.5 0.5;0 0.1 0.9 1;0.1 0 1 0.9;0.5 0.5 0.5 0.5" begin="-0.3s"></animateTransform>
+              </rect>
+            </g>
+            <g transform="translate(50 50)">
+              <rect x="-15" y="-15" width="30" height="30" fill="#2a9d8f" transform="scale(0.213342 0.213342)">
+                <animateTransform attributeName="transform" type="scale" repeatCount="indefinite" calcMode="spline"
+                  dur="1s" values="1;1;0.2;1;1" keyTimes="0;0.2;0.5;0.8;1"
+                  keySplines="0.5 0.5 0.5 0.5;0 0.1 0.9 1;0.1 0 1 0.9;0.5 0.5 0.5 0.5" begin="-0.2s"></animateTransform>
+              </rect>
+            </g>
+            <g transform="translate(80 50)">
+              <rect x="-15" y="-15" width="30" height="30" fill="#799098" transform="scale(0.441061 0.441061)">
+                <animateTransform attributeName="transform" type="scale" repeatCount="indefinite" calcMode="spline"
+                  dur="1s" values="1;1;0.2;1;1" keyTimes="0;0.2;0.5;0.8;1"
+                  keySplines="0.5 0.5 0.5 0.5;0 0.1 0.9 1;0.1 0 1 0.9;0.5 0.5 0.5 0.5" begin="-0.1s"></animateTransform>
+              </rect>
+            </g>
+            <g transform="translate(20 80)">
+              <rect x="-15" y="-15" width="30" height="30" fill="#2a9d8f" transform="scale(0.213342 0.213342)">
+                <animateTransform attributeName="transform" type="scale" repeatCount="indefinite" calcMode="spline"
+                  dur="1s" values="1;1;0.2;1;1" keyTimes="0;0.2;0.5;0.8;1"
+                  keySplines="0.5 0.5 0.5 0.5;0 0.1 0.9 1;0.1 0 1 0.9;0.5 0.5 0.5 0.5" begin="-0.2s"></animateTransform>
+              </rect>
+            </g>
+            <g transform="translate(50 80)">
+              <rect x="-15" y="-15" width="30" height="30" fill="#799098" transform="scale(0.441061 0.441061)">
+                <animateTransform attributeName="transform" type="scale" repeatCount="indefinite" calcMode="spline"
+                  dur="1s" values="1;1;0.2;1;1" keyTimes="0;0.2;0.5;0.8;1"
+                  keySplines="0.5 0.5 0.5 0.5;0 0.1 0.9 1;0.1 0 1 0.9;0.5 0.5 0.5 0.5" begin="-0.1s"></animateTransform>
+              </rect>
+            </g>
+            <g transform="translate(80 80)">
+              <rect x="-15" y="-15" width="30" height="30" fill="#264653" transform="scale(0.708027 0.708027)">
+                <animateTransform attributeName="transform" type="scale" repeatCount="indefinite" calcMode="spline"
+                  dur="1s" values="1;1;0.2;1;1" keyTimes="0;0.2;0.5;0.8;1"
+                  keySplines="0.5 0.5 0.5 0.5;0 0.1 0.9 1;0.1 0 1 0.9;0.5 0.5 0.5 0.5" begin="0s"></animateTransform>
+              </rect>
+            </g>
+
+          </svg>
+        </section>
+      </ng-template>
+
+    </mat-drawer-content>
+
+  </mat-drawer-container>
+
+</div>

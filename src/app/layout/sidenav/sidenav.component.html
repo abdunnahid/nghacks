@@ -1,0 +1,32 @@
+<div class="sidenav mat-elevation-z8">
+
+  <section class="sidenav-header">
+    <h2>Ng Libs</h2>
+    <button color="accent" type="button" mat-icon-button class="menu-toggle-btn" (click)="toogleSidenav()">
+      <mat-icon>menu_open</mat-icon>
+    </button>
+  </section>
+
+  <section class="sidenav-list">
+
+    <a *ngFor="let navItem of navigation" mat-button class="nav-link" [routerLink]="navItem.route"
+      [routerLinkActive]="['active']">
+      {{navItem.title}}
+    </a>
+
+  </section>
+
+  <section class="sidenav-footer">
+
+    <!-- <div class="sidenav-footer-container mat-elevation-z2">
+      <a mat-icon-button href="http://abdun-nahid.web.app" target="_blank" rel="noopener noreferrer"
+        matTooltip="About application">
+        <mat-icon>info</mat-icon>
+      </a>
+
+    </div> -->
+
+
+  </section>
+
+</div>

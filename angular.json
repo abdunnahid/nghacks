@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng-libs": {
+    "nghacks": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ng-libs",
+            "outputPath": "dist/nghacks",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -29,9 +29,16 @@
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/css/prism/prism-shades-of-purple.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/marked/lib/marked.js",
+              "./node_modules/prismjs/prism.js",
+              "./node_modules/prismjs/components/prism-css.min.js",
+              "./node_modules/prismjs/components/prism-javascript.min.js",
+              "./node_modules/prismjs/components/prism-typescript.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -67,18 +74,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ng-libs:build"
+            "browserTarget": "nghacks:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ng-libs:build:production"
+              "browserTarget": "nghacks:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ng-libs:build"
+            "browserTarget": "nghacks:build"
           }
         },
         "test": {
@@ -116,48 +123,47 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ng-libs:serve"
+            "devServerTarget": "nghacks:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ng-libs:serve:production"
+              "devServerTarget": "nghacks:serve:production"
             }
           }
         }
       }
     },
-    "ngmat-table-state-manager": {
+    "ngmat-table-query-reflector": {
       "projectType": "library",
-      "root": "projects/ngmat-table-state-manager",
-      "sourceRoot": "projects/ngmat-table-state-manager/src",
-      "prefix": "lib",
+      "root": "projects/ngmat-table-query-reflector",
+      "sourceRoot": "projects/ngmat-table-query-reflector/src",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/ngmat-table-state-manager/tsconfig.lib.json",
-            "project": "projects/ngmat-table-state-manager/ng-package.json"
+            "tsConfig": "projects/ngmat-table-query-reflector/tsconfig.lib.json",
+            "project": "projects/ngmat-table-query-reflector/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ngmat-table-state-manager/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ngmat-table-query-reflector/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ngmat-table-state-manager/src/test.ts",
-            "tsConfig": "projects/ngmat-table-state-manager/tsconfig.spec.json",
-            "karmaConfig": "projects/ngmat-table-state-manager/karma.conf.js"
+            "main": "projects/ngmat-table-query-reflector/src/test.ts",
+            "tsConfig": "projects/ngmat-table-query-reflector/tsconfig.spec.json",
+            "karmaConfig": "projects/ngmat-table-query-reflector/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/ngmat-table-state-manager/tsconfig.lib.json",
-              "projects/ngmat-table-state-manager/tsconfig.spec.json"
+              "projects/ngmat-table-query-reflector/tsconfig.lib.json",
+              "projects/ngmat-table-query-reflector/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -167,5 +173,5 @@
       }
     }
   },
-  "defaultProject": "ng-libs"
+  "defaultProject": "nghacks"
 }

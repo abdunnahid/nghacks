@@ -1,0 +1,57 @@
+@import './variables';
+
+table.mat-table {
+  width: 100%;
+
+  td {
+    // color: red !important;
+    text-transform: capitalize;
+
+    .mailto {
+      color: $accent;
+      text-transform: lowercase;
+    }
+
+    .tel {
+      color: $text-grey;
+      text-transform: lowercase;
+    }
+
+    .avatar {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      height: 48px;
+      width: 48px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 10px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  tr.mat-row:hover {
+    background: #EFF0F1;
+    transition: 0.4s ease;
+  }
+
+  td.mat-row {
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  th {
+    text-transform: capitalize;
+  }
+}
+
+
+.mat-paginator {
+  background-color: transparent !important;
+}

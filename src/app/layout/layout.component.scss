@@ -1,0 +1,47 @@
+@import '../../theming/variables';
+
+.layout {
+  .mat-drawer-container {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+    .mat-drawer {
+      border: none;
+    }
+
+    .side-nav-container {
+      width: 250px;
+
+      @media screen and (min-width: 1400px) {
+        width: 280px;
+      }
+
+      height: 100%;
+    }
+
+  }
+
+  .mat-drawer-content {
+    background-color: $content-background;
+
+    .content {
+      height: 100%;
+      margin-top: -64px;
+      box-sizing: border-box;
+      padding-top: 64px;
+      overflow-y: auto;
+    }
+
+  }
+
+}
+
+.content-loading {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  align-items: center;
+  margin-top: -64px;
+}

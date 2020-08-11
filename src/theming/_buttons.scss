@@ -1,0 +1,13 @@
+a.mat-button-base.link {
+  padding: 0;
+}
+
+.icon-button {
+  .mat-button-wrapper {
+    display: flex;
+    align-items: center;
+    .mat-icon {
+      margin-right: 5px;
+    }
+  }
+}

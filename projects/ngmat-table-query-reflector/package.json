@@ -1,0 +1,14 @@
+{
+  "name": "ngmat-table-query-reflector",
+  "version": "1.0.0",
+  "peerDependencies": {
+    "@angular/common": "^10.0.5",
+    "@angular/core": "^10.0.5",
+    "@angular/cdk": "^10.1.1",
+    "@angular/material": "^10.1.1",
+    "rxjs": "~6.5.5"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}

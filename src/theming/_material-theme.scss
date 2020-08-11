@@ -1,0 +1,129 @@
+@import '~@angular/material/theming';
+$mat-theme-ignore-duplication-warnings: true;
+@include mat-core();
+
+$mat-primary: (50 : #e5e9ea,
+  100 : #bec8cb,
+  200 : #93a3a9,
+  300 : #677e87,
+  400 : #47626d,
+  500 : #264653,
+  600 : #223f4c,
+  700 : #1c3742,
+  800 : #172f39,
+  900 : #0d2029,
+  A100 : #68c8ff,
+  A200 : #35b5ff,
+  A400 : #02a3ff,
+  A700 : #0093e7,
+  contrast: (50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #ffffff,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #ffffff,
+    A700 : #ffffff,
+  ));
+
+
+
+$mat-accent: (50 : #e5f3f2,
+  100 : #bfe2dd,
+  200 : #95cec7,
+  300 : #6abab1,
+  400 : #4aaca0,
+  500 : #2a9d8f,
+  600 : #259587,
+  700 : #1f8b7c,
+  800 : #198172,
+  900 : #0f6f60,
+  A100 : #a3ffef,
+  A200 : #70ffe6,
+  A400 : #3dffdd,
+  A700 : #24ffd8,
+  contrast: (50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  ));
+
+
+
+
+$mat-warn: (50 : #fceeea,
+  100 : #f8d4cb,
+  200 : #f3b7a8,
+  300 : #ee9a85,
+  400 : #eb856b,
+  500 : #e76f51,
+  600 : #e4674a,
+  700 : #e05c40,
+  800 : #dd5237,
+  900 : #d74027,
+  A100 : #ffffff,
+  A200 : #ffe4e0,
+  A400 : #ffb8ad,
+  A700 : #ffa194,
+  contrast: (50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #000000,
+    600 : #000000,
+    700 : #000000,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  ));
+
+$app-primary: mat-palette($mat-primary);
+$app-accent: mat-palette($mat-accent);
+$app-warn: mat-palette($mat-warn);
+
+$app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
+@include angular-material-theme($app-theme);
+
+// Form Field Theming
+$form-field-theme: mat-light-theme($app-accent, $app-primary, $app-warn);
+@include mat-form-field-theme($form-field-theme);
+
+// Typography Theming
+// src: https://material.angular.io/guide/typography
+$typography: mat-typography-config($font-family: 'Montserrat, Roboto, "Helvetica Neue", sans-serif',
+  $display-4: mat-typography-level(112px, 112px, 300, $letter-spacing: -0.05em),
+  $display-3: mat-typography-level(56px, 56px, 400, $letter-spacing: -0.02em),
+  $display-2: mat-typography-level(45px, 48px, 400, $letter-spacing: -0.005em),
+  $display-1: mat-typography-level(34px, 40px, 400),
+  $headline: mat-typography-level(24px, 32px, 400),
+  $title: mat-typography-level(20px, 32px, 600),
+  $subheading-2: mat-typography-level(16px, 28px, 400),
+  $subheading-1: mat-typography-level(15px, 24px, 400),
+  $body-2: mat-typography-level(14px, 24px, 600),
+  $body-1: mat-typography-level(14px, 20px, 400),
+  $caption: mat-typography-level(12px, 20px, 400),
+  $button: mat-typography-level(14px, 14px, 600),
+  // Line-height must be unit-less fraction of the font-size.
+  $input: mat-typography-level(inherit, 1.125, 400));
+
+@include angular-material-typography($typography);

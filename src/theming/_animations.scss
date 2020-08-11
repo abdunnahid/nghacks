@@ -1,0 +1,17 @@
+@import "./variables";
+
+.animation-shadow-pop-br {
+  animation: shadow-pop-br .3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+@keyframes shadow-pop-br {
+  0% {
+    box-shadow: 0 0 $primary, 0 0 $primary, 0 0 $primary, 0 0 $primary, 0 0 $primary, 0 0 $primary, 0 0 $primary, 0 0 $primary;
+    transform: translateX(0) translateY(0);
+  }
+
+  100% {
+    box-shadow: 1px 1px $primary, 2px 2px $primary, 3px 3px $primary, 4px 4px $primary, 5px 5px $primary, 6px 6px $primary, 7px 7px $primary, 8px 8px $primary;
+    transform: translateX(-8px) translateY(-8px);
+  }
+}

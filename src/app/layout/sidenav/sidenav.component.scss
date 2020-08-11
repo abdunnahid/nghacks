@@ -1,0 +1,97 @@
+@import '../../../theming/variables';
+
+.sidenav {
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: column;
+
+  .sidenav-header {
+    padding: 0 16px 0 24px;
+    height: 64px;
+    background-color: #fff;
+    border-bottom: .5px solid #fff;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      margin: 0;
+    }
+  }
+
+  .sidenav-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    overflow-y: auto;
+
+    .nav-link {
+      display: block;
+      width: 100%;
+      padding: 5px 24px;
+      border-top-left-radius: initial;
+      border-bottom-left-radius: initial;
+      border-top-right-radius: 7px;
+      border-bottom-right-radius: 7px;
+      text-align: left;
+      transition: all .2s;
+      color: $text-grey;
+      font-weight: 600;
+
+      &.active {
+        color: $accent;
+        font-weight: 600;
+        position: relative;
+        background-color: rgba($color: #000000, $alpha: .07);
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 7px;
+          height: 100%;
+          border-top-right-radius: 3rem;
+          border-bottom-right-radius: 3rem;
+          background-color: $accent;
+          background: $primary-accent-gradiant;
+        }
+      }
+    }
+  }
+
+  .sidenav-footer {
+    background-color: $content-background;
+
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 50%;
+      width: 100%;
+      background-color: #fff;
+      z-index: 1;
+    }
+
+    .sidenav-footer-container {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+      height: 50px;
+      border-radius: 3rem;
+      background: $primary-accent-gradiant;
+      color: lighten($color: $text-grey, $amount: 40%);
+    }
+  }
+}

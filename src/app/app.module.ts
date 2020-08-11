@@ -4,7 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgmatTableStateManagerConsumerModule } from './consumers/ngmat-table-state-manager/ngmat-table-state-manager.consumer.module';
+import { LayoutModule } from './layout/layout.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NgmatTableStateManagerConsumerModule } from './consumers/ngmat-table-st
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgmatTableStateManagerConsumerModule
+    LayoutModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

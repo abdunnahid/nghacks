@@ -1,0 +1,19 @@
+// Import material theming functions
+@import '~@angular/material/theming';
+@import './material-theme';
+
+$primary: mat-color($app-primary);
+$accent: mat-color($app-accent);
+$warn: mat-color($app-warn);
+$success: mat-color($app-accent);
+$text-grey: #808080;
+$text-dark: $primary;
+
+$primary-accent-gradiant: linear-gradient(120deg, $primary 0%, $accent 100%);
+$shadow-1: 0 1px 2px rgba($color: darken($color:#f2f9f9, $amount: 10%), $alpha: .2),
+0 2px 4px rgba($color: darken($color:#f2f9f9, $amount: 10%), $alpha: .2),
+0 4px 8px rgba($color: darken($color:#f2f9f9, $amount: 10%), $alpha: .2),
+0 8px 16px rgba($color: darken($color:#f2f9f9, $amount: 10%), $alpha: .2),
+0 16px 32px rgba($color: darken($color:#f2f9f9, $amount: 10%), $alpha: .2),
+0 32px 64px rgba($color: darken($color:#f2f9f9, $amount: 10%), $alpha: .2);
+$content-background: #f2f9f9;

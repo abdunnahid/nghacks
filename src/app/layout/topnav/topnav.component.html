@@ -1,0 +1,29 @@
+<mat-toolbar class="topnav">
+  <mat-toolbar-row>
+
+    <button *ngIf="!hideMenuToggleButton" color="accent" type="button" mat-icon-button
+      class="menu-toggle-btn mat-elevation-z2" (click)="openSideNav()">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <div class="topnav-content">
+
+      <div class="topnav-content-left">
+        <!-- <span>Toolbar</span> -->
+      </div>
+
+      <div class="topnav-content-right">
+        <a mat-raised-button href="https://github.com/abdunnahid/nghacks" target="_blank" class="profile">
+          <span class="img-container">
+            <img src="assets/logos/github.png" alt="">
+          </span>
+          <span class="name">
+            GitHub
+          </span>
+        </a>
+      </div>
+
+    </div>
+
+  </mat-toolbar-row>
+</mat-toolbar>

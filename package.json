@@ -1,13 +1,27 @@
 {
-  "name": "ng-libs",
-  "version": "0.0.0",
+  "name": "nghacks",
+  "version": "1.0.0",
+  "description": "Useful features built with Angular & Angular Material",
+  "homepage": "https://ng-hack.web.app",
+  "bugs": "https://github.com/abdunnahid/nghacks/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abdunnahid/nghacks.git"
+  },
+  "author": {
+    "name": "Abdun Nahid",
+    "email": "abdun.nahid@gmail.com",
+    "url": "https://abdun-nahid.web.app"
+  },
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "serve:ngmat-table-state-manager": "ng build --project=ngmat-table-query-reflector --watch"
   },
   "private": true,
   "dependencies": {
@@ -16,11 +30,14 @@
     "@angular/common": "~10.0.4",
     "@angular/compiler": "~10.0.4",
     "@angular/core": "~10.0.4",
+    "@angular/flex-layout": "^10.0.0-beta.32",
     "@angular/forms": "~10.0.4",
     "@angular/material": "^10.1.1",
     "@angular/platform-browser": "~10.0.4",
     "@angular/platform-browser-dynamic": "~10.0.4",
     "@angular/router": "~10.0.4",
+    "ngx-markdown": "^10.1.0",
+    "prismjs": "^1.21.0",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"

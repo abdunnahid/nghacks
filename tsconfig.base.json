@@ -19,6 +19,14 @@
       "ngmat-table-state-manager": [
         "dist/ngmat-table-state-manager/ngmat-table-state-manager",
         "dist/ngmat-table-state-manager"
+      ],
+      "ng-mat-query-reflector": [
+        "dist/ng-mat-query-reflector/ng-mat-query-reflector",
+        "dist/ng-mat-query-reflector"
+      ],
+      "ngmat-table-query-reflector": [
+        "dist/ngmat-table-query-reflector/ngmat-table-query-reflector",
+        "dist/ngmat-table-query-reflector"
       ]
     }
   }
