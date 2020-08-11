@@ -24,7 +24,7 @@
     "e2e": "ng e2e",
     "build:app:prod": "ng build --prod",
     "serve:ngmat-table-state-manager": "ng build --project=ngmat-table-query-reflector --watch",
-    "build:ngmat-table-state-manager": "ng build --project=ngmat-table-query-reflector"
+    "build:prod:ngmat-table-state-manager": "ng build --project=ngmat-table-query-reflector --prod"
   },
   "private": true,
   "dependencies": {
