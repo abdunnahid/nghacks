@@ -14,6 +14,7 @@ declare const require: {
     <T>(id: string): T;
   };
 };
+
 // First, initialize the Angular testing environment.
 getTestBed().initTestEnvironment(
   BrowserDynamicTestingModule,

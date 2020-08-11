@@ -1,38 +1,37 @@
 name: npm-publish 'ngmat-table-query-reflector'
 on:
   push:
-    branches: [ master ]
+    branches: [master]
     paths:
-      - 'projects/ngmat-table-query-reflector/**'
+      - "projects/ngmat-table-query-reflector/**"
 jobs:
-
   npm-publish:
     name: npm-publish
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@master
+      - name: Checkout repository
+        uses: actions/checkout@master
 
-    - name: Set up Node
-      uses: actions/setup-node@master
-      with:
-        node-version: 12.x
+      - name: Set up Node
+        uses: actions/setup-node@master
+        with:
+          node-version: 12.x
 
-    - name: Install Application Dependencies
-      working-directory: ./
-      run: npm install
+      - name: Install Application Dependencies
+        working-directory: ./
+        run: npm install
 
-    - name: Install Package Dependencies
-      working-directory: projects/ngmat-table-query-reflector
-      run: npm install
+      - name: Install Package Dependencies
+        working-directory: projects/ngmat-table-query-reflector
+        run: npm install
 
-    - name: Build Package
-      working-directory: ./
-      run: npm run build:ngmat-table-state-manager
+      - name: Build Package
+        working-directory: ./
+        run: npm run build:prod:ngmat-table-state-manager
 
-    - name: Publish
-      working-directory: dist/ngmat-table-query-reflector
-      run: npm publish
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+      - name: Publish
+        working-directory: dist/ngmat-table-query-reflector
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
