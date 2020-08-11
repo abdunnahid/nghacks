@@ -18,11 +18,13 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:prod": "ng build --prod",
+    "build:prod": "npm run build:ngmat-table-state-manager && npm run build:app:prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "serve:ngmat-table-state-manager": "ng build --project=ngmat-table-query-reflector --watch"
+    "build:app:prod": "ng build --prod",
+    "serve:ngmat-table-state-manager": "ng build --project=ngmat-table-query-reflector --watch",
+    "build:ngmat-table-state-manager": "ng build --project=ngmat-table-query-reflector"
   },
   "private": true,
   "dependencies": {
