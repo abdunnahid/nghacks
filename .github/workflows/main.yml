@@ -1,0 +1,37 @@
+name: CI - Client
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+
+  build:
+    name: Firebase Deploy
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+        
+      - name: Setup Node
+        uses: actions/setup-node@master
+        with:
+          node-version: '10.x'
+          
+      - name: Install Dependencies
+        working-directory: ./
+        run: npm install
+        
+      - name: Build
+        working-directory: ./
+        run: npm run build:prod
+        
+      - name: Deploy to Firebase
+        uses: w9jds/firebase-action@master
+        with:
+          args: deploy --only hosting
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          PROJECT_ID: "default"
+          PROJECT_PATH: "./"
