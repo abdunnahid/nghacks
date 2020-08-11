@@ -1,6 +1,6 @@
 {
   "name": "@nghacks/ngmat-table-query-reflector",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "peerDependencies": {
     "@angular/common": "^10.0.5",
     "@angular/core": "^10.0.5",
