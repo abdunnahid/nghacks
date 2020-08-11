@@ -24,7 +24,7 @@ jobs:
       run: npm install
 
     - name: Build Package
-      working-directory: projects/ngmat-table-query-reflector
+      working-directory: ./
       run: npm run build:ngmat-table-state-manager
 
     - name: Publish if version has been updated
