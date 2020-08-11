@@ -19,7 +19,11 @@ jobs:
       with:
         node-version: 10.x
 
-    - name: Install Dependencies
+    - name: Install Application Dependencies
+      working-directory: ./
+      run: npm install
+
+    - name: Install Package Dependencies
       working-directory: projects/ngmat-table-query-reflector
       run: npm install
 
