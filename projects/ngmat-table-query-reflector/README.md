@@ -1,6 +1,6 @@
 # NgMatTableQueryReflector
 
-An Angular Module that exports a directive to reflect material table states(sorting & pagination) on URL Query Params.
+Stores and retrieves mat table states (sorting, pagination) with url query params
 
 [Live Preview](https://ng-hack.web.app/mat-table-query-reflector)
 

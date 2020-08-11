@@ -1,7 +1,7 @@
 {
   "name": "nghacks",
   "version": "1.0.0",
-  "description": "Useful features built with Angular & Angular Material",
+  "description": "Useful reusable pieces built with Angular, Angular Material and some sort of Hack",
   "homepage": "https://ng-hack.web.app",
   "bugs": "https://github.com/abdunnahid/nghacks/issues",
   "repository": {

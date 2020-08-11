@@ -1,0 +1,13 @@
+.page-home {
+  .card-container {
+    display: block;
+    text-decoration: none;
+    max-width: 400px;
+  }
+}
+
+::ng-deep .page-home {
+  .mat-card-header-text {
+    margin: 0;
+  }
+}

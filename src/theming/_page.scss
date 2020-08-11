@@ -54,6 +54,10 @@
       margin: 0;
       color: darken($color: $text-grey, $amount: 25%);
     }
+
+    h3 {
+      margin: 10px 0 0;
+    }
   }
 
   main {
@@ -89,6 +93,7 @@
         .mat-list-item>p {
           font-size: 16px;
         }
+
         .mat-list-item>p {
           font-size: 12px;
         }
