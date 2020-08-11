@@ -40,10 +40,6 @@ export class MarkdownPreviewerComponent implements OnInit, OnDestroy {
       });
   }
 
-  public openInDialog(): void {
-    this._router.navigate([], { queryParams: { installationGuide: 'show' }, queryParamsHandling: 'merge' });
-  }
-
   public ngOnDestroy(): void {
     this._unsubscribeAll.next();
     this._unsubscribeAll.complete();

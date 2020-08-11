@@ -8,6 +8,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 import { MarkdownPreviewerComponent } from './markdown-previewer.component';
 import { MarkdownDialogPreviewComponent } from './components/markdown-dialog-preview/markdown-dialog-preview.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MarkdownDialogPreviewComponent } from './components/markdown-dialog-pre
     MatButtonModule,
     MatDialogModule,
     MatProgressSpinnerModule,
-    MarkdownModule.forRoot({ loader: HttpClient })
+    MarkdownModule.forRoot({ loader: HttpClient }),
+    RouterModule
   ],
   exports: [
     MarkdownPreviewerComponent

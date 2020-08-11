@@ -1,1 +1,7 @@
-<button color="accent" mat-stroked-button (click)="openInDialog()">See User Manual</button>
+<a
+  [routerLink]="[]"
+  [queryParams]="{ installationGuide: 'show' }"
+  [queryParamsHandling]="'merge'"
+  color="accent" mat-stroked-button>
+  See User Manual
+</a>
