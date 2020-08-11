@@ -1,4 +1,4 @@
-name: CI - Client
+name: Firebase Deploy
 
 on:
   push:
