@@ -4,7 +4,7 @@ export const Navigation: INavigation[] = [
   {
     id: 'home',
     title: 'Home',
-    route: '/home',
+    route: '/',
     icon: ''
   },
   {
