@@ -5,7 +5,8 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./home/home.module')
-      .then(module => module.HomeModule)
+      .then(module => module.HomeModule),
+    pathMatch: 'full'
   },
   {
     path: 'mat-table-query-reflector',

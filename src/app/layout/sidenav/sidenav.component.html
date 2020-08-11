@@ -10,7 +10,7 @@
   <section class="sidenav-list">
 
     <a *ngFor="let navItem of navigation" mat-button class="nav-link" [routerLink]="navItem.route"
-      [routerLinkActive]="['active']">
+      [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
       {{navItem.title}}
     </a>
 
