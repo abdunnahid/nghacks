@@ -3,7 +3,7 @@ on:
   push:
     branches: [master]
     paths:
-      - "projects/ngmat-table-query-reflector/**"
+      - "main/projects/ngmat-table-query-reflector/**"
 jobs:
   npm-publish:
     name: npm-publish
@@ -19,19 +19,19 @@ jobs:
           node-version: 12.x
 
       - name: Install Application Dependencies
-        working-directory: ./
+        working-directory: ./main
         run: npm install
 
       - name: Install Package Dependencies
-        working-directory: projects/ngmat-table-query-reflector
+        working-directory: main/projects/ngmat-table-query-reflector
         run: npm install
 
       - name: Build Package
-        working-directory: ./
+        working-directory: ./main
         run: npm run build:prod:ngmat-table-state-manager
 
       - name: Publish
         uses: JS-DevTools/npm-publish@v1
         with:
-          package: dist/ngmat-table-query-reflector/package.json
+          package: main/dist/ngmat-table-query-reflector/package.json
           token: ${{ secrets.NPM_AUTH_TOKEN }}

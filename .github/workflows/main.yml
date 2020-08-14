@@ -1,8 +1,10 @@
-name: Firebase Deploy
+name: CI - Main App
 
 on:
   push:
     branches: [ master ]
+    paths:
+      - "main/**"
 
 jobs:
 
@@ -20,11 +22,11 @@ jobs:
           node-version: '12.x'
 
       - name: Install Dependencies
-        working-directory: ./
+        working-directory: ./main
         run: npm install
 
       - name: Build
-        working-directory: ./
+        working-directory: ./main
         run: npm run build:prod
 
       - name: Deploy to Firebase
@@ -34,4 +36,4 @@ jobs:
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
           PROJECT_ID: "default"
-          PROJECT_PATH: "./"
+          PROJECT_PATH: "./main"
