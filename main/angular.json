@@ -171,6 +171,46 @@
           }
         }
       }
+    },
+    "dynamic-browser-title": {
+      "projectType": "library",
+      "root": "projects/dynamic-browser-title",
+      "sourceRoot": "projects/dynamic-browser-title/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/dynamic-browser-title/tsconfig.lib.json",
+            "project": "projects/dynamic-browser-title/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/dynamic-browser-title/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/dynamic-browser-title/src/test.ts",
+            "tsConfig": "projects/dynamic-browser-title/tsconfig.spec.json",
+            "karmaConfig": "projects/dynamic-browser-title/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/dynamic-browser-title/tsconfig.lib.json",
+              "projects/dynamic-browser-title/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "nghacks"

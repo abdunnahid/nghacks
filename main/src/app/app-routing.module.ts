@@ -14,6 +14,11 @@ const routes: Routes = [
       .then(module => module.MatTableQueryReflectorModule)
   },
   {
+    path: 'dynamic-browser-title',
+    loadChildren: () => import('./consumer-modules/dynamic-browser-title/dynamic-browser-title.module')
+      .then(module => module.DynamicBrowserTitleModule)
+  },
+  {
     path: '**',
     redirectTo: ''
   }

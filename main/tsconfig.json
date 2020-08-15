@@ -16,6 +16,12 @@
     },
     {
       "path": "./projects/ngmat-table-query-reflector/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/dynamic-browser-title/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/dynamic-browser-title/tsconfig.spec.json"
     }
   ],
 }

@@ -7,6 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from './layout/layout.module';
 import { HttpClientModule } from '@angular/common/http';
 
+import { DynamicBrowserTitleModule } from 'dynamic-browser-title';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -16,7 +18,10 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     BrowserAnimationsModule,
     LayoutModule,
-    HttpClientModule
+    HttpClientModule,
+    DynamicBrowserTitleModule.forRoot({
+      selector: '.page header h1'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,9 +2,12 @@
 
 ![Nh Hacks](https://github.com/abdunnahid/nghacks/blob/master/main/src/assets/banners/banner.jpg?raw=true)
 
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/abdunnahid/nghacks/CI%20-%20Main%20App?label=Live%20Demo%20Deployment)
+![GitHub](https://img.shields.io/github/license/abdunnahid/nghacks)
+
 Useful reusable pieces built with Angular, Angular Material and some sort of Hack.
 
-We developers always stuck into problems. We spend hours on finding solutions. Sometimes it seems impossible. But somehow we come up with a solution, does not need to be the perfect one. Everyone knows the term “hack” or “workaround”. Almost every developer does the practical implementation of this term. It can be because of the deadline, tight task estimation, lack of knowledge, or maybe the bug in the technology itself. I also did some hacky implementation with Angular. This repo is about those hacks. 
+We developers always stuck into problems. We spend hours on finding solutions. Sometimes it seems impossible. But somehow we come up with a solution, does not need to be the perfect one. Everyone knows the term “hack” or “workaround”. Almost every developer does the practical implementation of this term. It can be because of the deadline, tight task estimation, lack of knowledge, or maybe the bug in the technology itself. I also did some hacky implementation with Angular. This repo is about those hacks.
 
 _**Note:** The implemtations of this repo uses hacks & workaround solutions. And also may contain bad practices. Please take it with that concern on your mind. Your opinion can be different on things and that's fine. These are the hacks that worked for me._
 
@@ -12,9 +15,19 @@ _**Note:** The implemtations of this repo uses hacks & workaround solutions. And
 
 ## [ngmat-table-query-reflector](https://github.com/abdunnahid/nghacks/tree/master/projects/ngmat-table-query-reflector)
 
-Stores and retrieves mat table states (sorting, pagination) with url query params. 
+Stores and retrieves mat table states (sorting, pagination) with url query params.
 
 [Live Preview](https://ng-hack.web.app/mat-table-query-reflector)
 
-"How to" [Article](https://dev.to/abdunnahid/managing-angular-material-table-states-with-query-params-a-comprehensive-guide-1o8j)
+[Blog](https://dev.to/abdunnahid/managing-angular-material-table-states-with-query-params-a-comprehensive-guide-1o8j)
 
+[![npm (scoped)](https://img.shields.io/npm/v/@nghacks/ngmat-table-query-reflector?color=%23c53635)](https://www.npmjs.com/package/@nghacks/ngmat-table-query-reflector)
+
+
+## [dynamic-browser-title](https://github.com/abdunnahid/nghacks/tree/master/projects/dynamic-browser-title)
+
+Updates browser title dynamically & automatically on route change.
+
+[Live Preview](https://ng-hack.web.app/dynamic-browser-title)
+
+[![npm (scoped)](https://img.shields.io/npm/v/@nghacks/dynamic-browser-title?color=%23c53635)](https://www.npmjs.com/package/@nghacks/dynamic-browser-title)

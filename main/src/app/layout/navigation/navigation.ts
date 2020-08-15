@@ -13,4 +13,10 @@ export const Navigation: INavigation[] = [
     route: '/mat-table-query-reflector',
     icon: ''
   },
+  {
+    id: 'dynamic-browser-title',
+    title: 'Dynamic Browser title',
+    route: '/dynamic-browser-title',
+    icon: ''
+  },
 ];

@@ -17,14 +17,16 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
-    "build:prod": "npm run build:prod:ngmat-table-state-manager && npm run build:app:prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "build:prod": "npm run build:packages:prod && npm run build:app:prod",
     "build:app:prod": "ng build --prod",
-    "serve:ngmat-table-state-manager": "ng build --project=ngmat-table-query-reflector --watch",
-    "build:prod:ngmat-table-state-manager": "ng build --project=ngmat-table-query-reflector --prod"
+    "build:packages:prod": "npm run build:prod:ngmat-table-query-reflector && npm run build:prod:dynamic-browser-title",
+    "serve:ngmat-table-query-reflector": "ng build --project=ngmat-table-query-reflector --watch",
+    "build:prod:ngmat-table-query-reflector": "ng build --project=ngmat-table-query-reflector --prod",
+    "serve:dynamic-browser-title": "ng build --project=dynamic-browser-title --watch",
+    "build:prod:dynamic-browser-title": "ng build --project=dynamic-browser-title --prod"
   },
   "private": true,
   "dependencies": {

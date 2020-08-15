@@ -27,6 +27,10 @@
       "ngmat-table-query-reflector": [
         "dist/ngmat-table-query-reflector/ngmat-table-query-reflector",
         "dist/ngmat-table-query-reflector"
+      ],
+      "dynamic-browser-title": [
+        "dist/dynamic-browser-title/dynamic-browser-title",
+        "dist/dynamic-browser-title"
       ]
     }
   }

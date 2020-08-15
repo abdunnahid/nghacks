@@ -2,6 +2,9 @@
 
 Stores and retrieves mat table states (sorting, pagination) with url query params
 
+## Demo
+![Demo gif](https://github.com/abdunnahid/nghacks/blob/master/articles/mat-table-query-params/src/assets/demo.gif?raw=true)
+
 [Live Preview](https://ng-hack.web.app/mat-table-query-reflector)
 
 ## How to use
