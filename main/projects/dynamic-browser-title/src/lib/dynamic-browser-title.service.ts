@@ -14,6 +14,7 @@ export class DynamicBrowserTitleService {
   private _hasDynamicTitleServiceInitialized: boolean;
   private _titleChecker$: any;
   private _defaultTitle: string;
+  private _document: Document;
 
   public set config(config: DynamicBrowserTitleConfig) {
     this._config = config;
@@ -22,9 +23,10 @@ export class DynamicBrowserTitleService {
   constructor(
     @Optional() private _config: DynamicBrowserTitleConfig,
     private _router: Router,
-    @Inject(DOCUMENT) private _document: Document,
+    @Inject(DOCUMENT) private document: any,
     private _titleService: Title
   ) {
+    this._document = this.document as Document;
     this.init();
     const titleElem: HTMLElement = this._document.querySelector('title');
     this._defaultTitle = titleElem?.innerText || '';

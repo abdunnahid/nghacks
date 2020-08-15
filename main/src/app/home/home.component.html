@@ -6,20 +6,80 @@
   </header>
 
   <main>
-    <a routerLink="/mat-table-query-reflector" class="card-container">
-      <mat-card>
-        <mat-card-header>
-          <mat-card-title>NgMatTableQueryReflector</mat-card-title>
-          <mat-card-subtitle>Directive</mat-card-subtitle>
-        </mat-card-header>
-        <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
-        <mat-card-content>
-          <p>
-            Stores and retrieves mat table states (sorting, pagination) with url query params
-          </p>
-        </mat-card-content>
-      </mat-card>
-    </a>
+    <div class="card-layout">
+      <div class="card-container">
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>Mat Table Query Reflector</mat-card-title>
+            <mat-card-subtitle>Directive</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <p>
+              Stores and retrieves mat table states (sorting, pagination) with url query params
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+
+            <div class="card-actions-container">
+
+              <div class="left-actions">
+                <a mat-stroked-button color="accent" routerLink="/mat-table-query-reflector">
+                  View
+                </a>
+                <a mat-button
+                  href="https://dev.to/abdunnahid/managing-angular-material-table-states-with-query-params-a-comprehensive-guide-1o8j"
+                  target="_blank">
+                  Blog
+                </a>
+              </div>
+
+              <div class="right-actions">
+                <a class="npm-badge" href="https://www.npmjs.com/package/@nghacks/ngmat-table-query-reflector"
+                  target="_blank">
+                  <img alt="NPM Package version"
+                    src="https://img.shields.io/npm/v/@nghacks/ngmat-table-query-reflector?color=%23c53635&style=for-the-badge">
+                </a>
+              </div>
+
+            </div>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+
+      <div class="card-container">
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>Dynamic Browser Title</mat-card-title>
+            <mat-card-subtitle>Service</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <p>
+              Updates browser title dynamically & automatically on route change.
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+
+            <div class="card-actions-container">
+
+              <div class="left-actions">
+                <a mat-stroked-button color="accent" routerLink="/dynamic-browser-title">
+                  View
+                </a>
+              </div>
+
+              <div class="right-actions">
+                <a class="npm-badge" href="https://www.npmjs.com/package/@nghacks/dynamic-browser-title"
+                  target="_blank">
+                  <img alt="NPM Package version"
+                    src="https://img.shields.io/npm/v/@nghacks/dynamic-browser-title?color=%23c53635&style=for-the-badge">
+                </a>
+              </div>
+
+            </div>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
   </main>
 
 </section>

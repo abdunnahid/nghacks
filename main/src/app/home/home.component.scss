@@ -1,8 +1,31 @@
 .page-home {
-  .card-container {
-    display: block;
-    text-decoration: none;
-    max-width: 400px;
+  .card-layout {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -20px;
+
+    .card-container {
+      flex: 1;
+      text-decoration: none;
+      min-width: 400px;
+      max-width: 400px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+
+      .card-actions-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 8px;
+
+        .npm-badge {
+          display: flex;
+          height: 100%;
+          align-items: flex-end;
+        }
+      }
+    }
   }
 }
 
