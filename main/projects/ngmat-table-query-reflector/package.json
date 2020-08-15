@@ -26,6 +26,8 @@
   },
   "homepage": "https://ng-hack.web.app",
   "bugs": "https://github.com/abdunnahid/nghacks/issues",
+  "license": "MIT",
+  "private": false,
   "peerDependencies": {
     "@angular/common": "^10.0.5",
     "@angular/core": "^10.0.5",
