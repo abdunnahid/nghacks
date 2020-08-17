@@ -2,6 +2,7 @@
 
 ![Nh Hacks](https://github.com/abdunnahid/nghacks/blob/master/main/src/assets/banners/banner.jpg?raw=true)
 
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/abdunnahid/nghacks)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/abdunnahid/nghacks/CI%20-%20Main%20App?label=web%20preview%20build)
 ![GitHub](https://img.shields.io/github/license/abdunnahid/nghacks)
 
