@@ -33,7 +33,7 @@ Stores and retrieves mat table states (sorting, pagination) with url query param
 
 [![npm (scoped)](https://img.shields.io/npm/v/@nghacks/ngmat-table-query-reflector?color=%23c53635)](https://www.npmjs.com/package/@nghacks/ngmat-table-query-reflector)
 [![npm](https://img.shields.io/npm/dw/@nghacks/ngmat-table-query-reflector)](https://www.npmjs.com/package/@nghacks/ngmat-table-query-reflector)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/abdunnahid/nghacks/npm-publish%20'dynamic-browser-title'?label=build%20%27dynamic-browser-title%27)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/abdunnahid/nghacks/npm-publish%20'ngmat-table-query-reflector'?label=build%20%27ngmat-table-query-reflector%27)
 
 ### [dynamic-browser-title](https://github.com/abdunnahid/nghacks/tree/master/projects/dynamic-browser-title)
 
@@ -43,6 +43,6 @@ Updates browser title dynamically & automatically on route change.
 
 [![npm (scoped)](https://img.shields.io/npm/v/@nghacks/dynamic-browser-title?color=%23c53635)](https://www.npmjs.com/package/@nghacks/dynamic-browser-title)
 [![npm](https://img.shields.io/npm/dw/@nghacks/dynamic-browser-title)](https://www.npmjs.com/package/@nghacks/dynamic-browser-title)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/abdunnahid/nghacks/npm-publish%20'ngmat-table-query-reflector'?label=build%20%27ngmat-table-query-reflector%27)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/abdunnahid/nghacks/npm-publish%20'dynamic-browser-title'?label=build%20%27dynamic-browser-title%27)
 
 
