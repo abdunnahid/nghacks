@@ -29,7 +29,7 @@ Stores and retrieves mat table states (sorting, pagination) with url query param
 
 [Live Preview](https://ng-hack.web.app/mat-table-query-reflector)
 
-[Blog](https://dev.to/abdunnahid/managing-angular-material-table-states-with-query-params-a-comprehensive-guide-1o8j)
+You can read that on my [blog](https://dev.to/abdunnahid/managing-angular-material-table-states-with-query-params-a-comprehensive-guide-1o8j)
 
 [![npm (scoped)](https://img.shields.io/npm/v/@nghacks/ngmat-table-query-reflector?color=%23c53635)](https://www.npmjs.com/package/@nghacks/ngmat-table-query-reflector)
 [![npm](https://img.shields.io/npm/dw/@nghacks/ngmat-table-query-reflector)](https://www.npmjs.com/package/@nghacks/ngmat-table-query-reflector)
