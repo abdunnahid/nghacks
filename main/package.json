@@ -26,7 +26,9 @@
     "serve:ngmat-table-query-reflector": "ng build --project=ngmat-table-query-reflector --watch",
     "build:prod:ngmat-table-query-reflector": "ng build --project=ngmat-table-query-reflector --prod",
     "serve:dynamic-browser-title": "ng build --project=dynamic-browser-title --watch",
-    "build:prod:dynamic-browser-title": "ng build --project=dynamic-browser-title --prod"
+    "build:prod:dynamic-browser-title": "ng build --project=dynamic-browser-title --prod",
+    "serve:uploader": "ng build --project=uploader-title --watch",
+    "build:prod:uploader": "ng build --project=uploader --prod"
   },
   "private": true,
   "dependencies": {

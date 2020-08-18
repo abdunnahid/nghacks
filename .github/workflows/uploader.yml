@@ -1,0 +1,37 @@
+name: npm-publish 'uploader'
+on:
+  push:
+    branches: [master]
+    paths:
+      - "main/projects/uploader/**"
+jobs:
+  npm-publish:
+    name: npm-publish
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@master
+
+      - name: Set up Node
+        uses: actions/setup-node@master
+        with:
+          node-version: 12.x
+
+      - name: Install Application Dependencies
+        working-directory: ./main
+        run: npm install
+
+      - name: Install Package Dependencies
+        working-directory: main/projects/uploader
+        run: npm install
+
+      - name: Build Package
+        working-directory: ./main
+        run: npm run build:prod:uploader
+
+      - name: Publish
+        uses: JS-DevTools/npm-publish@v1
+        with:
+          package: main/dist/uploader/package.json
+          token: ${{ secrets.NPM_AUTH_TOKEN }}
