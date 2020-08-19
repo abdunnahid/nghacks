@@ -22,6 +22,12 @@
     },
     {
       "path": "./projects/dynamic-browser-title/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/uploader/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/uploader/tsconfig.spec.json"
     }
   ],
 }

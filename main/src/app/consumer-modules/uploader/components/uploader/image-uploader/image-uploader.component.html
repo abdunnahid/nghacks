@@ -1,0 +1,71 @@
+
+<div class="page-content">
+
+  <div class="uploader-section image-uploader-section">
+    <div class="example">
+      <h2>Basic</h2>
+
+      <div class="uploader-input image-uploader-input">
+        <img-uploader
+          (fileInputChange)="imageInputChange($event, 'upOne')">
+        </img-uploader>
+      </div>
+
+      <div class="payload">
+        <h3>@Output() Payload</h3>
+        <pre>{{imageUploaders?.upOne | json}}</pre>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="page-content">
+  <div class="uploader-section image-uploader-section">
+    <div class="example">
+      <h2>Height, Width & Label</h2>
+
+      <div class="uploader-input image-uploader-input" style="width: 200px; margin: 0 auto">
+        <img-uploader
+          minHeight=200
+          maxHeight=200
+          pickerLabel="Drag or Choose"
+          (fileInputChange)="imageInputChange($event, 'upTwo')">
+        </img-uploader>
+      </div>
+
+      <div class="payload">
+        <h3>@Output() Payload</h3>
+        <pre>{{imageUploaders?.upTwo | json}}</pre>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="page-content">
+  <div class="uploader-section image-uploader-section">
+    <div class="example">
+      <h2>Image size, Type & Hint</h2>
+
+      <div class="uploader-input image-uploader-input">
+        <img-uploader
+          minHeight=60
+          maxHeight=500
+          maxSize=10000
+          pickerLabel="Drag your funny GIF, or Choose"
+          [accept]="['.gif']"
+          hint="Please choose .gif only (max: 10mb)"
+          (fileInputChange)="imageInputChange($event, 'upThree')">
+        </img-uploader>
+      </div>
+
+      <div class="payload">
+        <h3>@Output() Payload</h3>
+        <pre>{{imageUploaders?.upThree | json}}</pre>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -31,6 +31,10 @@
       "dynamic-browser-title": [
         "dist/dynamic-browser-title/dynamic-browser-title",
         "dist/dynamic-browser-title"
+      ],
+      "uploader": [
+        "dist/uploader/uploader",
+        "dist/uploader"
       ]
     }
   }

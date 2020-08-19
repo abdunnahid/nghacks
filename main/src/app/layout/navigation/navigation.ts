@@ -19,4 +19,10 @@ export const Navigation: INavigation[] = [
     route: '/dynamic-browser-title',
     icon: ''
   },
+  {
+    id: 'uploader',
+    title: 'Uploader',
+    route: '/uploader',
+    icon: ''
+  },
 ];

@@ -1,0 +1,39 @@
+{
+  "name": "@nghacks/uploader",
+  "version": "0.1.0",
+  "description": "Image and file uploader for angular",
+  "keywords": [
+    "angular",
+    "uploader",
+    "image uploader",
+    "file uploader",
+    "component",
+    "form",
+    "input",
+    "file input",
+    "reactive form",
+    "ng",
+    "ngx",
+    "nghacks"
+  ],
+  "author": {
+    "name": "Abdun Nahid",
+    "email": "abdun.nahid@gmail.com",
+    "url": "https://abdun-nahid.web.app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abdunnahid/nghacks.git"
+  },
+  "homepage": "https://ng-hack.web.app",
+  "bugs": "https://github.com/abdunnahid/nghacks/issues",
+  "license": "MIT",
+  "private": false,
+  "peerDependencies": {
+    "@angular/common": "^10.0.5",
+    "@angular/core": "^10.0.5"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}
