@@ -9,9 +9,9 @@
 
 Useful reusable pieces built with Angular, Angular Material and some sort of Hack.
 
-We developers always stuck into problems. We spend hours on finding solutions. Sometimes it seems impossible. But somehow we come up with a solution, does not need to be the perfect one. Everyone knows the term “hack” or “workaround”. Almost every developer does the practical implementation of this term. It can be because of the deadline, tight task estimation, lack of knowledge, or maybe the bug in the technology itself. I also did some hacky implementation with Angular. This repo is about those hacks.
+We developers always stuck into problems. We spend hours on finding solutions. Sometimes it seems impossible. But somehow we come up with a solution, does not need to be the perfect one. Everyone knows the term “hack” or “workaround”. Almost every developer does the practical implementation of this term. It can be because of the deadline, tight task estimation, lack of knowledge, or maybe the bug in the technology itself. "nghacks" is an experiment something like that.
 
-_**Note:** The implemtations of this repo uses hacks & workaround solutions. And also may contain bad practices. Please take it with that concern on your mind. Your opinion can be different on things and that's fine. These are the hacks that worked for me._
+_**Note:** The implemtations of this repo may contain hacks bad practices. Please take it with that concern on your mind. You may know a better solution. Please contrubute with issues and PRs_
 
 **Let the hacking begin.**
 
@@ -45,5 +45,16 @@ Updates browser title dynamically & automatically on route change.
 [![npm (scoped)](https://img.shields.io/npm/v/@nghacks/dynamic-browser-title?color=%23c53635)](https://www.npmjs.com/package/@nghacks/dynamic-browser-title)
 [![npm](https://img.shields.io/npm/dw/@nghacks/dynamic-browser-title)](https://www.npmjs.com/package/@nghacks/dynamic-browser-title)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/abdunnahid/nghacks/npm-publish%20'dynamic-browser-title'?label=build%20%27dynamic-browser-title%27)
+
+
+### [uploader](https://github.com/abdunnahid/nghacks/tree/master/projects/uploader)
+
+Picks image or file
+
+[Live Preview](https://ng-hack.web.app/uploader)
+
+[![npm (scoped)](https://img.shields.io/npm/v/@nghacks/uploader?color=%23c53635)](https://www.npmjs.com/package/@nghacks/uploader)
+[![npm](https://img.shields.io/npm/dw/@nghacks/uploader)](https://www.npmjs.com/package/@nghacks/uploader)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/abdunnahid/nghacks/npm-publish%20'uploader'?label=build%20%27uploader%27)
 
 
