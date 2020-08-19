@@ -14,22 +14,30 @@ export class BaseUploaderComponent {
   formCtrl: FormControl = new FormControl();
 
   /**
-   * @example 'Drag file, or Choose'
+   * @description Picker label
+   * @default 'Drag image, or Choose' for image uploader
+   * @default 'Drag file, or Choose' for file uploader
+   * @example 'Drag your funny video, or Choose'
    */
   @Input() pickerLabel: string;
 
   /**
+   * @description Hint is used to guide user
    * @example 'Max file size: 5mb'
    */
   @Input() hint: string;
 
   /**
    * @description acceptable file types
+   * @default ['.jpg', '.png', '.jpeg'] for image uploader
+   * @default ['.pdf', '.csv', '.doc', '.docx','.docx', '.xlsx', '.cer'] for file uploader
+   * @example ['.gif'] for only gif files
    */
   @Input() accept: string[];
 
   /**
    * @description maximum file size in kb (kilobyte)
+   * @default 5000 (5mb)
    */
   @Input() maxSize = 5000;
 
@@ -40,6 +48,7 @@ export class BaseUploaderComponent {
 
   /**
    * @description min-height of the picker
+   * @default 48 (in pixel)
    */
   @Input() minHeight = 48;
 

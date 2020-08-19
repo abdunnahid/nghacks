@@ -1,24 +1,114 @@
-# Uploader
+# DynamicBrowserTitle
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
+Picks image or file.
 
-## Code scaffolding
+[Live Preview](https://ng-hack.web.app/uploader)
 
-Run `ng generate component component-name --project uploader` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project uploader`.
-> Note: Don't forget to add `--project uploader` or else it will be added to the default project in your `angular.json` file. 
+## How to use
 
-## Build
+> Install package
 
-Run `ng build uploader` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+npm install @nghacks/uploader
+```
 
-## Publishing
+> Import `UploaderModule` to your consumer module like `ConsumerModule`
 
-After building your library with `ng build uploader`, go to the dist folder `cd dist/uploader` and run `npm publish`.
+```typescript
+import { NgModule } from '@angular/core';
+...
+...
+import { UploaderModule } from '@nghacks/uploader';
 
-## Running unit tests
+@NgModule({
+  declarations: [
+    ...
+  ],
+  imports: [
+    ...
+    UploaderModule
+  ]
+})
+export class ConsumerModule { }
+```
 
-Run `ng test uploader` to execute the unit tests via [Karma](https://karma-runner.github.io).
+> Use component on html template
 
-## Further help
+```html
+<img-uploader (fileInputChange)="imageInputChange($event)"></img-uploader>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+<file-uploader (fileInputChange)="imageInputChange($event)"></file-uploader>
+```
+
+## Inputs
+
+```typescript
+/**
+ * @description Picker label
+ * @default 'Drag image, or Choose' for image uploader
+ * @default 'Drag file, or Choose' for file uploader
+ * @example 'Drag your funny video, or Choose'
+ */
+@Input() pickerLabel: string;
+
+/**
+ * @description Hint is used to guide user
+ * @example 'Max file size: 5mb'
+ */
+@Input() hint: string;
+
+/**
+ * @description acceptable file types
+ * @default ['.jpg', '.png', '.jpeg'] for image uploader
+ * @default ['.pdf', '.csv', '.doc', '.docx','.docx', '.xlsx', '.cer'] for file uploader
+ * @example ['.gif'] for only gif files
+ */
+@Input() accept: string[];
+
+/**
+ * @description maximum file size in kb (kilobyte)
+ * @default 5000 (5mb)
+ */
+@Input() maxSize = 5000;
+
+/**
+ * @description disables the picker
+ */
+@Input() disabled: boolean;
+
+/**
+ * @description min-height of the picker
+ * @default 48 (in pixel)
+ */
+@Input() minHeight = 48;
+
+/**
+ * @description max-height of the image previewer
+ * @memberof ImgUploaderComponent only
+ * @default 250 (in pixel)
+ */
+@Input() maxHeight = 250;
+```
+
+## Inputs
+
+```typescript
+@Output() fileInputChange = new EventEmitter<FileInputChange>();
+```
+
+## Types
+
+```typescript
+export interface UploaderError {
+  maxSizeExceeded: boolean;
+  wrongFileType: boolean;
+}
+
+export interface FileInputChange {
+  hasFile: boolean;
+  fileName: string;
+  base64Image: string[];
+  errors: UploaderError;
+}
+
+```

@@ -20,6 +20,7 @@ export class ImgUploaderComponent extends BaseUploaderComponent {
 
   /**
    * @description max-height of the image previewer
+   * @memberof ImgUploaderComponent
    */
   @Input() maxHeight = 250;
 
