@@ -1,0 +1,46 @@
+
+<div class="page-content">
+
+  <div class="uploader-section image-uploader-section">
+    <div class="example">
+      <h2>Basic</h2>
+
+      <div class="uploader-input image-uploader-input">
+        <file-uploader
+          (fileInputChange)="imageInputChange($event, 'upOne')">
+        </file-uploader>
+      </div>
+
+      <div class="payload">
+        <h3>@Output() Payload</h3>
+        <pre>{{fileUploaders?.upOne | json}}</pre>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="page-content">
+  <div class="uploader-section image-uploader-section">
+    <div class="example">
+      <h2>File type</h2>
+
+      <div class="uploader-input image-uploader-input">
+        <file-uploader
+          minHeight=60
+          pickerLabel="Drag your expense report file or Choose"
+          [accept]="['.docx', '.pdf']"
+          hint="Please choose .pdf or .docx only"
+          (fileInputChange)="imageInputChange($event, 'upTwo')">
+        </file-uploader>
+      </div>
+
+      <div class="payload">
+        <h3>@Output() Payload</h3>
+        <pre>{{fileUploaders?.upTwo | json}}</pre>
+      </div>
+
+    </div>
+  </div>
+</div>

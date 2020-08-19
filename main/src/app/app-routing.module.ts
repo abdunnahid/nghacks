@@ -19,6 +19,11 @@ const routes: Routes = [
       .then(module => module.DynamicBrowserTitleModule)
   },
   {
+    path: 'uploader',
+    loadChildren: () => import('./consumer-modules/uploader/uploader.module')
+      .then(module => module.UploaderConsumerModule)
+  },
+  {
     path: '**',
     redirectTo: ''
   }

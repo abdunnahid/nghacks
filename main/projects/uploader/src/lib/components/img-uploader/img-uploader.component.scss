@@ -1,0 +1,21 @@
+@import '../base/uploader-style.base.scss';
+
+.uploader.image-preview {
+  position: relative;
+  cursor: pointer;
+
+  .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+
+    img {
+      height: 100% !important;
+      width: auto;
+      max-width: 100%;
+    }
+
+  }
+}

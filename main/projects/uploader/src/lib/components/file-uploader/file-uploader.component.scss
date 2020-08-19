@@ -1,0 +1,27 @@
+@import '../base/uploader-style.base.scss';
+
+.uploader.file-preview {
+  position: relative;
+  cursor: pointer;
+
+  .file {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    .file-name {
+      font-weight: bold;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      width: 100%;
+      overflow: hidden;
+      text-align: center;
+    }
+  }
+}

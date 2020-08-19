@@ -1,13 +1,13 @@
-<section class="page page-list dynamic-browser-title-page">
+<section class="page page-details uploader-page">
 
   <header>
-    <h1>Dynamic Browser Title</h1>
+    <h1>Uploader</h1>
   </header>
 
   <main>
 
     <div class="info">
-      <mat-expansion-panel expanded hideToggle disabled>
+      <mat-expansion-panel>
 
         <mat-expansion-panel-header>
           <mat-panel-title>
@@ -55,9 +55,17 @@
       </mat-expansion-panel>
     </div>
 
-    <div class="page-content">
+    <mat-tab-group mat-align-tabs="start">
 
-    </div>
+      <mat-tab label="Image Uploader">
+        <app-image-uploader></app-image-uploader>
+      </mat-tab>
+
+      <mat-tab label="File Uploader">
+        <app-file-uploader></app-file-uploader>
+      </mat-tab>
+
+    </mat-tab-group>
 
   </main>
 
