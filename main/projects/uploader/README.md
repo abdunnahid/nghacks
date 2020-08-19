@@ -1,4 +1,4 @@
-# DynamicBrowserTitle
+# Uploader
 
 Picks image or file.
 
@@ -37,7 +37,7 @@ export class ConsumerModule { }
 ```html
 <img-uploader (fileInputChange)="imageInputChange($event)"></img-uploader>
 
-<file-uploader (fileInputChange)="imageInputChange($event)"></file-uploader>
+<file-uploader (fileInputChange)="fileInputChange($event)"></file-uploader>
 ```
 
 ## Inputs
