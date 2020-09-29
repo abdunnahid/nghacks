@@ -8,121 +8,36 @@
   <main>
     <div class="card-layout">
 
-      <div class="app-card-container">
-        <div>
-          <mat-card>
-            <mat-card-header>
-              <mat-card-title>Mat Table Query Reflector</mat-card-title>
-              <mat-card-subtitle>Directive</mat-card-subtitle>
-            </mat-card-header>
-            <mat-card-content>
-              <p>
-                Stores and retrieves mat table states (sorting, pagination) with url query params
-              </p>
-            </mat-card-content>
-            <mat-card-actions>
+      <div class="home-card" *ngFor="let item of data">
 
-              <div class="card-actions-container">
-
-                <div class="left-actions">
-                  <a mat-stroked-button color="accent" routerLink="/mat-table-query-reflector">
-                    View
-                  </a>
-                  <a mat-button
-                    href="https://dev.to/abdunnahid/managing-angular-material-table-states-with-query-params-a-comprehensive-guide-1o8j"
-                    target="_blank">
-                    Blog
-                  </a>
-                </div>
-
-                <div class="right-actions">
-                  <a class="npm-badge" href="https://www.npmjs.com/package/@nghacks/ngmat-table-query-reflector"
-                    target="_blank">
-                    <img alt="NPM Package version"
-                      src="https://img.shields.io/npm/v/@nghacks/ngmat-table-query-reflector?color=%23c53635&style=for-the-badge">
-                  </a>
-                </div>
-
-              </div>
-            </mat-card-actions>
-          </mat-card>
+        <div class="home-card-header">
+          <h2 class="home-card-title">{{item.title}}</h2>
+          <h4 class="home-card-subtitle">{{item.subtitle}}</h4>
         </div>
-      </div>
 
-      <div class="app-card-container">
-        <div>
-          <mat-card>
-            <mat-card-header>
-              <mat-card-title>Dynamic Browser Title</mat-card-title>
-              <mat-card-subtitle>Service</mat-card-subtitle>
-            </mat-card-header>
-
-            <mat-card-content>
-              <p>
-                Updates browser title dynamically & automatically on route change.
-              </p>
-            </mat-card-content>
-
-            <mat-card-actions>
-
-              <div class="card-actions-container">
-
-                <div class="left-actions">
-                  <a mat-stroked-button color="accent" routerLink="/dynamic-browser-title">
-                    View
-                  </a>
-                </div>
-
-                <div class="right-actions">
-                  <a class="npm-badge" href="https://www.npmjs.com/package/@nghacks/dynamic-browser-title"
-                    target="_blank">
-                    <img alt="NPM Package version"
-                      src="https://img.shields.io/npm/v/@nghacks/dynamic-browser-title?color=%23c53635&style=for-the-badge">
-                  </a>
-                </div>
-
-              </div>
-            </mat-card-actions>
-
-          </mat-card>
+        <div class="home-card-content">
+          <p>
+            {{item.content}}
+          </p>
         </div>
-      </div>
 
-      <div class="app-card-container">
-        <div>
-          <mat-card>
-            <mat-card-header>
-              <mat-card-title>Uploader</mat-card-title>
-              <mat-card-subtitle>Component</mat-card-subtitle>
-            </mat-card-header>
-            <mat-card-content>
-              <p>
-                Picks image or file. Module consists of two components: File & Image Uploader.
-              </p>
-            </mat-card-content>
-            <mat-card-actions>
+        <div class="home-card-actions">
+          <div class="left-actions">
+            <a mat-stroked-button color="accent" [routerLink]="item.route">
+              View
+            </a>
+            <a class="blog-btn" mat-button *ngIf="item.blogUrl" [href]="item.blogUrl" target="_blank">
+              Blog
+            </a>
+          </div>
 
-              <div class="card-actions-container">
-
-                <div class="left-actions">
-                  <a mat-stroked-button color="accent" routerLink="/uploader">
-                    View
-                  </a>
-                </div>
-
-                <div class="right-actions">
-                  <a class="npm-badge" href="https://www.npmjs.com/package/@nghacks/uploader"
-                    target="_blank">
-                    <img alt="NPM Package version"
-                      src="https://img.shields.io/npm/v/@nghacks/uploader?color=%23c53635&style=for-the-badge">
-                  </a>
-                </div>
-
-              </div>
-            </mat-card-actions>
-          </mat-card>
-
+          <div class="right-actions">
+            <a class="npm-badge" [href]="item.npmUrl" target="_blank">
+              <img alt="NPM Package version" [src]="item.badgeUrl">
+            </a>
+          </div>
         </div>
+
       </div>
 
     </div>

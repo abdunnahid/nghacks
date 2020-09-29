@@ -9,11 +9,6 @@
 
 Useful reusable pieces built with Angular, Angular Material and some sort of Hack.
 
-We developers always stuck into problems. We spend hours on finding solutions. Sometimes it seems impossible. But somehow we come up with a solution, does not need to be the perfect one. Everyone knows the term “hack” or “workaround”. Almost every developer does the practical implementation of this term. It can be because of the deadline, tight task estimation, lack of knowledge, or maybe the bug in the technology itself. "nghacks" is an experiment something like that.
-
-_**Note:** The implemtations of this repo may contain hacks bad practices. Please take it with that concern on your mind. You may know a better solution. Please contrubute with issues and PRs_
-
-**Let the hacking begin.**
 
 ## Web Preview
 
