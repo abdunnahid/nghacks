@@ -3,7 +3,7 @@
 .sidenav {
   height: 100vh;
   overflow-y: auto;
-  background-color: #fff;
+  background: linear-gradient(120deg, $accent 0%, $primary 100%);
 
   display: flex;
   flex-direction: column;
@@ -11,8 +11,6 @@
   .sidenav-header {
     padding: 0 16px 0 24px;
     height: 64px;
-    background-color: #fff;
-    border-bottom: .5px solid #fff;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
@@ -20,6 +18,12 @@
 
     h2 {
       margin: 0;
+    }
+
+    .menu-toggle-btn {
+      .mat-icon {
+        color: #fff;
+      }
     }
   }
 
@@ -40,14 +44,14 @@
       border-bottom-right-radius: 7px;
       text-align: left;
       transition: all .2s;
-      color: $text-grey;
+      color: #fff;
       font-weight: 600;
 
       &.active {
         color: $accent;
         font-weight: 600;
         position: relative;
-        background-color: rgba($color: #000000, $alpha: .07);
+        background-color: #fff;
 
         &::before {
           content: "";
