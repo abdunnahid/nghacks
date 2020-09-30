@@ -57,7 +57,7 @@ Picks image or file
 
 ---
 
-### [Info Dialog](https://github.com/abdunnahid/nghacks/tree/master/main/projects/info-dialog)
+### [info-dialog](https://github.com/abdunnahid/nghacks/tree/master/main/projects/info-dialog)
 
 Shows detail information on a dialog/modal
 
