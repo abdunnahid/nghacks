@@ -31,6 +31,8 @@ You can read that on my [blog](https://dev.to/abdunnahid/managing-angular-materi
 [![npm](https://img.shields.io/npm/dw/@nghacks/ngmat-table-query-reflector)](https://www.npmjs.com/package/@nghacks/ngmat-table-query-reflector)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/abdunnahid/nghacks/npm-publish%20'ngmat-table-query-reflector'?label=build%20%27ngmat-table-query-reflector%27)
 
+---
+
 ### [dynamic-browser-title](https://github.com/abdunnahid/nghacks/tree/master/main/projects/dynamic-browser-title)
 
 Updates browser title dynamically & automatically on route change.
@@ -41,6 +43,7 @@ Updates browser title dynamically & automatically on route change.
 [![npm](https://img.shields.io/npm/dw/@nghacks/dynamic-browser-title)](https://www.npmjs.com/package/@nghacks/dynamic-browser-title)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/abdunnahid/nghacks/npm-publish%20'dynamic-browser-title'?label=build%20%27dynamic-browser-title%27)
 
+---
 
 ### [uploader](https://github.com/abdunnahid/nghacks/tree/master/main/projects/uploader)
 
@@ -52,7 +55,7 @@ Picks image or file
 [![npm](https://img.shields.io/npm/dw/@nghacks/uploader)](https://www.npmjs.com/package/@nghacks/uploader)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/abdunnahid/nghacks/npm-publish%20'uploader'?label=build%20%27uploader%27)
 
-
+---
 
 ### [Info Dialog](https://github.com/abdunnahid/nghacks/tree/master/main/projects/info-dialog)
 
