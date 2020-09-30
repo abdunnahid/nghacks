@@ -25,5 +25,14 @@ export const HomeCardListData = [
     npmUrl: 'https://www.npmjs.com/package/@nghacks/uploader',
     badgeUrl: 'https://img.shields.io/npm/v/@nghacks/uploader?color=%23c53635&style=for-the-badge',
     route: '/uploader'
+  },
+  {
+    title: 'Info Dialog',
+    subtitle: 'Component',
+    content: 'Shows detail information on a dialog/modal.',
+    blogUrl: '',
+    npmUrl: 'https://www.npmjs.com/package/@nghacks/info-dialog',
+    badgeUrl: 'https://img.shields.io/npm/v/@nghacks/info-dialog?color=%23c53635&style=for-the-badge',
+    route: '/info-dialog'
   }
 ];

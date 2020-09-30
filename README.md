@@ -19,7 +19,7 @@ Browse website: [ng-hack.web.app](https://ng-hack.web.app/)
 
 ## Hacks
 
-### [ngmat-table-query-reflector](https://github.com/abdunnahid/nghacks/tree/master/projects/ngmat-table-query-reflector)
+### [ngmat-table-query-reflector](https://github.com/abdunnahid/nghacks/tree/master/main/projects/ngmat-table-query-reflector)
 
 Stores and retrieves mat table states (sorting, pagination) with url query params.
 
@@ -31,7 +31,7 @@ You can read that on my [blog](https://dev.to/abdunnahid/managing-angular-materi
 [![npm](https://img.shields.io/npm/dw/@nghacks/ngmat-table-query-reflector)](https://www.npmjs.com/package/@nghacks/ngmat-table-query-reflector)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/abdunnahid/nghacks/npm-publish%20'ngmat-table-query-reflector'?label=build%20%27ngmat-table-query-reflector%27)
 
-### [dynamic-browser-title](https://github.com/abdunnahid/nghacks/tree/master/projects/dynamic-browser-title)
+### [dynamic-browser-title](https://github.com/abdunnahid/nghacks/tree/master/main/projects/dynamic-browser-title)
 
 Updates browser title dynamically & automatically on route change.
 
@@ -42,7 +42,7 @@ Updates browser title dynamically & automatically on route change.
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/abdunnahid/nghacks/npm-publish%20'dynamic-browser-title'?label=build%20%27dynamic-browser-title%27)
 
 
-### [uploader](https://github.com/abdunnahid/nghacks/tree/master/projects/uploader)
+### [uploader](https://github.com/abdunnahid/nghacks/tree/master/main/projects/uploader)
 
 Picks image or file
 
@@ -51,5 +51,17 @@ Picks image or file
 [![npm (scoped)](https://img.shields.io/npm/v/@nghacks/uploader?color=%23c53635)](https://www.npmjs.com/package/@nghacks/uploader)
 [![npm](https://img.shields.io/npm/dw/@nghacks/uploader)](https://www.npmjs.com/package/@nghacks/uploader)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/abdunnahid/nghacks/npm-publish%20'uploader'?label=build%20%27uploader%27)
+
+
+
+### [Info Dialog](https://github.com/abdunnahid/nghacks/tree/master/main/projects/info-dialog)
+
+Shows detail information on a dialog/modal
+
+[Live Preview](https://ng-hack.web.app/info-dialog)
+
+[![npm (scoped)](https://img.shields.io/npm/v/@nghacks/info-dialog?color=%23c53635)](https://www.npmjs.com/package/@nghacks/info-dialog)
+[![npm](https://img.shields.io/npm/dw/@nghacks/info-dialog)](https://www.npmjs.com/package/@nghacks/info-dialog)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/abdunnahid/nghacks/npm-publish%20'info-dialog'?label=build%20%27info-dialog%27)
 
 
