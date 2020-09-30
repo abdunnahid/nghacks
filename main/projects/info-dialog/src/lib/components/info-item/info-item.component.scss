@@ -1,0 +1,9 @@
+:host {
+    display: flex;
+    flex: 1;
+    margin: 20px 0;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}

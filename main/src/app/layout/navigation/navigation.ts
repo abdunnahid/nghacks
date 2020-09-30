@@ -25,4 +25,10 @@ export const Navigation: INavigation[] = [
     route: '/uploader',
     icon: ''
   },
+  {
+    id: 'info-dialog',
+    title: 'Info Dialog',
+    route: '/info-dialog',
+    icon: ''
+  },
 ];

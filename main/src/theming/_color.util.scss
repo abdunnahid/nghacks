@@ -1,0 +1,13 @@
+@import './variables';
+
+.color-active {
+  color: $accent;
+}
+
+.color-inactive {
+  color: rgba($color: $text-grey, $alpha: .7)
+}
+
+.color-warn {
+  color: $warn;
+}

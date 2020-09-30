@@ -11,12 +11,12 @@ ng g lib <lib-name>
 > - This command will create the library on `main/projects/<lib-name>`.
 > - Will update angular.json, tsconfig.json & tsconfig.base.json on `main` workspace.
 
-3. Add npm scripts to serve & build the new lib on `main/package.json`
-
-4. Update lib `package.json` with basic information.
+3. Update lib `package.json` with basic information.
 
 > - Add `@nghacks` scope to the package name.
 > - Add `description`, `keywords`, `author`, `repository`, `homepage`, `bugs`, `license`, `private`
+
+4. Add npm scripts to serve & build the new lib on `main/package.json`
 
 ```bash
 "serve:<lib-name>": "ng build --project=<lib-name> --watch",

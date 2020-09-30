@@ -1,0 +1,12 @@
+<button mat-icon-button (click)="openDialog()">
+  <ng-content select="[info-dialog-icon]"></ng-content>
+</button>
+
+<ng-template #infoTemplateRef>
+    <div class="info-dialog-box">
+        <button mat-icon-button class="info-dialog-close-button" mat-dialog-close>
+            <mat-icon>close</mat-icon>
+        </button>
+        <ng-content></ng-content>
+    </div>
+</ng-template>

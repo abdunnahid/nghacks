@@ -131,6 +131,20 @@
 
     main {
       max-width: 800px;
+
+      .page-content {
+
+        .page-content-box-header {
+          padding: 20px;
+
+          .page-content-box-title,
+          .page-content-box-subtitle {
+            margin: 0;
+          }
+        }
+
+        .page-content-box-content {}
+      }
     }
   }
 

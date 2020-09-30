@@ -1,0 +1,67 @@
+<!-- Example: Templating: User Status Info -->
+
+<ng-container *ngTemplateOutlet="statusInfo"></ng-container>
+
+<ng-template #statusInfo>
+    <info-dialog>
+        <info-title>Status Info</info-title>
+
+        <info-section>
+            <info-section-title>User Status</info-section-title>
+
+            <info-item>
+                <info-label>
+                    <span class="color-active">Active</span>
+                </info-label>
+                <info-content>
+                    A user's request to join EcoHub has been approved and the onboarding
+                    invitation
+                    has been accepted.
+                </info-content>
+            </info-item>
+            <info-item>
+                <info-label>
+                    <span class="color-deactivated">Inactive</span>
+                </info-label>
+                <info-content>
+                    A user's profile that was previously active has been deactivated.
+                </info-content>
+            </info-item>
+
+            <info-item>
+                <info-label>
+                    <span class="color-pending">Outstanding</span>
+                </info-label>
+                <info-content>
+                    User's request to join EcoHub has been approved but the onboarding
+                    invitation has not been accepted yet.
+                </info-content>
+            </info-item>
+
+        </info-section>
+
+        <info-section>
+            <info-section-title>Subscription Status</info-section-title>
+
+            <info-item>
+                <info-label>
+                    <span class="color-active">Active</span>
+                </info-label>
+                <info-content>
+                    A user's subscription request to join a membership has been approved and
+                    EcoHub login access granted.
+                </info-content>
+            </info-item>
+            <info-item>
+                <info-label>
+                    <span class="color-deactivated">Inactive</span>
+                </info-label>
+                <info-content>
+                    A user previously active for a membership subscription has now been
+                    deactivated and can no longer access the subscription.
+                </info-content>
+            </info-item>
+        </info-section>
+
+    </info-dialog>
+</ng-template>

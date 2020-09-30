@@ -24,6 +24,11 @@ const routes: Routes = [
       .then(module => module.UploaderConsumerModule)
   },
   {
+    path: 'info-dialog',
+    loadChildren: () => import('./consumer-modules/info-dialog/info-dialog-consumer.module')
+      .then(module => module.InfoDialogConsumerModule)
+  },
+  {
     path: '**',
     redirectTo: ''
   }

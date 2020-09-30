@@ -1,0 +1,12 @@
+:host {
+    display: block;
+    border-bottom: 1px solid #E8E8EE;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+
+    &:last-of-type {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}

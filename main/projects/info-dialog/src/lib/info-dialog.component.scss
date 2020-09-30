@@ -1,0 +1,12 @@
+.info-dialog-box {
+
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    .info-dialog-close-button {
+        position: absolute;
+        right: -10px;
+        top: -10px;
+    }
+}

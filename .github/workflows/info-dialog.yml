@@ -1,9 +1,9 @@
-name: npm-publish 'info-dialog'
+name: npm-publish 'uploader'
 on:
   push:
     branches: [master]
     paths:
-      - "main/projects/info-dialog/**"
+      - "main/projects/uploader/**"
 jobs:
   npm-publish:
     name: npm-publish
@@ -23,15 +23,15 @@ jobs:
         run: npm install
 
       - name: Install Package Dependencies
-        working-directory: main/projects/info-dialog
+        working-directory: main/projects/uploader
         run: npm install
 
       - name: Build Package
         working-directory: ./main
-        run: npm run build:prod:info-dialog
+        run: npm run build:prod:uploader
 
       - name: Publish
         uses: JS-DevTools/npm-publish@v1
         with:
-          package: main/dist/info-dialog/package.json
+          package: main/dist/uploader/package.json
           token: ${{ secrets.NPM_AUTH_TOKEN }}

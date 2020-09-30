@@ -28,6 +28,12 @@
     },
     {
       "path": "./projects/uploader/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/info-dialog/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/info-dialog/tsconfig.spec.json"
     }
   ],
 }

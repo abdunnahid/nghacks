@@ -1,0 +1,432 @@
+<section class="page page-details info-dialog-page">
+
+  <header>
+    <h1>Info Dialog</h1>
+  </header>
+
+  <main>
+
+    <div class="info">
+      <mat-expansion-panel>
+
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <h2>Info</h2>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div class="info-content">
+          <mat-list role="list">
+
+            <div mat-subheader>About</div>
+
+            <mat-list-item role="listitem">
+              <mat-icon mat-list-icon>done_all</mat-icon>
+              <h3 mat-line>Shows detail information on a dialog/modal.</h3>
+            </mat-list-item>
+
+            <div mat-subheader>Don't understand what it does?</div>
+
+            <mat-list-item role="listitem">
+              <mat-icon mat-list-icon>navigate_next</mat-icon>
+              <h3 mat-line>Try clicking the info icons of the examples below.</h3>
+            </mat-list-item>
+
+            <mat-list-item role="listitem">
+              <mat-icon mat-list-icon>navigate_next</mat-icon>
+              <h3 mat-line>Check the custom Icon Implementation on <strong>Sound Mode</strong> below.</h3>
+            </mat-list-item>
+
+            <mat-list-item role="listitem">
+              <mat-icon mat-list-icon>playlist_add_check</mat-icon>
+              <h3 mat-line>Checkout the detail information showed up on the modal.</h3>
+            </mat-list-item>
+
+          </mat-list>
+
+          <mat-list role="list">
+            <div mat-subheader>Installation & Usage</div>
+            <mat-list-item role="listitem">
+              <a href="https://github.com/abdunnahid/nghacks/tree/master/main/projects/info-dialog" target="_blank" color="accent"
+                mat-stroked-button>
+                GitHub
+              </a>
+              <a class="mr-10" href="https://www.npmjs.com/package/@nghacks/info-dialog" target="_blank" color="accent"
+                mat-button>
+                NPM
+              </a>
+            </mat-list-item>
+          </mat-list>
+
+        </div>
+      </mat-expansion-panel>
+    </div>
+
+
+    <div class="page-content">
+
+      <div class="page-content-box-header">
+        <h2 class="page-content-box-title">Example Use Case: Settings</h2>
+        <h3 class="page-content-box-subtitle">Usage with MatList</h3>
+      </div>
+
+      <div class="page-content-box-content">
+
+        <mat-list>
+
+          <h3 matSubheader>Settings</h3>
+
+          <mat-list-item>
+            <mat-icon matListIcon>wifi</mat-icon>
+            <h3 matLine> Wi-Fi </h3>
+            <ng-container matListIcon *ngTemplateOutlet="wifi"></ng-container>
+
+
+            <mat-slide-toggle></mat-slide-toggle>
+
+          </mat-list-item>
+
+          <mat-divider></mat-divider>
+
+
+          <mat-list-item>
+            <mat-icon matListIcon>bluetooth</mat-icon>
+            <h3 matLine> Bluetooth </h3>
+            <ng-container matListIcon *ngTemplateOutlet="bluetooth"></ng-container>
+
+            <mat-slide-toggle></mat-slide-toggle>
+
+          </mat-list-item>
+
+          <mat-divider></mat-divider>
+
+          <mat-list-item>
+            <ng-container matListIcon *ngTemplateOutlet="soundModeInfo"></ng-container>
+            <h3 matLine> Sound Mode </h3>
+            <p matLine> Click the left sound icon to see detailed info </p>
+
+            <button color="warn" mat-icon-button [matMenuTriggerFor]="soundMode">
+              <mat-icon matListIcon>volume_off</mat-icon>
+            </button>
+
+          </mat-list-item>
+
+        </mat-list>
+
+      </div>
+
+    </div>
+
+    <div class="page-content">
+
+      <div class="page-content-box-header">
+        <h2 class="page-content-box-title">Example Use Case: User List</h2>
+        <h3 class="page-content-box-subtitle">Usage with MatList</h3>
+      </div>
+
+      <div class="page-content-box-content">
+
+        <mat-list>
+
+          <h3 matSubheader>Users</h3>
+
+          <mat-list-item>
+            <mat-icon matListIcon>person</mat-icon>
+            <h3 matLine> Abdun Nahid </h3>
+            <p matLine> Lorem ipsum dolor sit amet consectetur</p>
+
+            <div>
+              <small><strong>Status</strong></small>
+              <div>
+                <small class="mr-10">User:</small>
+                <small class="color-warn">Pending</small>
+              </div>
+              <div>
+                <small class="mr-10">Subscription:</small>
+                <small class="color-inactive">Inactive</small>
+              </div>
+            </div>
+
+            <ng-container *ngTemplateOutlet="userStatusInfo"></ng-container>
+
+          </mat-list-item>
+
+          <mat-divider></mat-divider>
+
+          <mat-list-item>
+            <mat-icon matListIcon>person</mat-icon>
+            <h3 matLine> John Doe </h3>
+            <p matLine> Lorem ipsum dolor</p>
+
+            <div>
+              <small><strong>Status</strong></small>
+              <div>
+                <small class="mr-10">User:</small>
+                <small class="color-inactive">Inactive</small>
+              </div>
+              <div>
+                <small class="mr-10">Subscription:</small>
+                <small class="color-inactive">Inactive</small>
+              </div>
+            </div>
+
+            <ng-container *ngTemplateOutlet="userStatusInfo"></ng-container>
+
+          </mat-list-item>
+
+          <mat-divider></mat-divider>
+
+          <mat-list-item>
+            <mat-icon matListIcon>person</mat-icon>
+            <h3 matLine> Jane Smith </h3>
+            <p matLine> Lorem ipsum dolor</p>
+
+            <div>
+              <small><strong>Status</strong></small>
+              <div>
+                <small class="mr-10">User: </small>
+                <small class="color-active"> Active</small>
+              </div>
+              <div>
+                <small class="mr-10">Subscription: </small>
+                <small class="color-active"> Active&nbsp;&nbsp;</small>
+              </div>
+            </div>
+
+            <ng-container *ngTemplateOutlet="userStatusInfo"></ng-container>
+
+          </mat-list-item>
+
+        </mat-list>
+
+      </div>
+
+    </div>
+
+
+  </main>
+
+</section>
+
+
+<mat-menu #soundMode="matMenu">
+
+  <button mat-menu-item>
+    <mat-icon color="warn" matListIcon>volume_off</mat-icon>
+    <span>Silent</span>
+  </button>
+
+  <button mat-menu-item>
+    <mat-icon matListIcon>volume_down</mat-icon>
+    <span>Medium</span>
+  </button>
+
+  <button mat-menu-item>
+    <mat-icon color="" matListIcon>volume_up</mat-icon>
+    <span>Loud</span>
+  </button>
+
+  <button mat-menu-item>
+    <mat-icon matListIcon>vibration</mat-icon>
+    <span>Vibration Only</span>
+  </button>
+
+</mat-menu>
+
+<ng-template #soundModeInfo>
+
+  <info-dialog>
+
+    <mat-icon info-dialog-icon color="accent" matTooltip="Click to see details">volume_up</mat-icon>
+
+    <info-title>Sound Mode</info-title>
+
+    <info-section>
+
+      <info-item>
+
+        <info-label>
+          <span style="display: flex; align-items: center;">
+            <mat-icon color="warn" matListIcon class="mr-10">volume_off</mat-icon>
+            <span>Silent</span>
+          </span>
+        </info-label>
+
+        <info-content>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quia. Quisquam, placeat.
+        </info-content>
+
+      </info-item>
+
+      <info-item>
+
+        <info-label>
+          <span style="display: flex; align-items: center;">
+            <mat-icon matListIcon class="mr-10">volume_down</mat-icon>
+            <span>Medium</span>
+          </span>
+        </info-label>
+
+        <info-content>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique corrupti dolor sequi, autem ea mollitia.
+        </info-content>
+
+      </info-item>
+
+      <info-item>
+
+        <info-label>
+          <span style="display: flex; align-items: center;">
+            <mat-icon color="accent" matListIcon class="mr-10">volume_up</mat-icon>
+            <span>Loud</span>
+          </span>
+        </info-label>
+
+        <info-content>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, dolor?
+        </info-content>
+
+      </info-item>
+
+      <info-item>
+
+        <info-label>
+          <span style="display: flex; align-items: center;">
+            <mat-icon color="primary" matListIcon class="mr-10">vibration</mat-icon>
+            <span>Vibration Only</span>
+          </span>
+        </info-label>
+
+        <info-content>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi doloremque veritatis asperiores repellat
+          natus ipsam provident est voluptatibus fuga quasi.
+        </info-content>
+
+      </info-item>
+
+    </info-section>
+
+  </info-dialog>
+
+</ng-template>
+
+
+<ng-template #wifi>
+
+  <info-dialog>
+
+    <mat-icon info-dialog-icon color="accent" matTooltip="Click to see details">info</mat-icon>
+
+    <info-title>Wi-Fi</info-title>
+
+    <ng-container matListIcon *ngTemplateOutlet="onOff"></ng-container>
+
+
+  </info-dialog>
+
+</ng-template>
+
+<ng-template #bluetooth>
+
+  <info-dialog>
+
+    <mat-icon info-dialog-icon color="accent" matTooltip="Click to see details">info</mat-icon>
+
+    <info-title>Bluetooth</info-title>
+
+    <ng-container matListIcon *ngTemplateOutlet="onOff"></ng-container>
+
+
+  </info-dialog>
+
+</ng-template>
+
+
+<ng-template #onOff>
+  <info-section>
+
+    <info-item>
+      <info-label>
+        <span class="color-active">On</span>
+      </info-label>
+      <info-content>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit sequi atque dolores, iure ex nemo?
+      </info-content>
+    </info-item>
+    <info-item>
+      <info-label>
+        <span class="color-warn">Off</span>
+      </info-label>
+      <info-content>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio blanditiis doloribus sequi.
+      </info-content>
+    </info-item>
+
+  </info-section>
+
+</ng-template>
+
+<ng-template #userStatusInfo>
+
+  <info-dialog>
+
+    <mat-icon info-dialog-icon color="accent" matTooltip="Click to see details">info</mat-icon>
+
+    <info-title>Status Info</info-title>
+
+    <info-section>
+      <info-section-title>User Status</info-section-title>
+
+      <info-item>
+        <info-label>
+          <span class="color-active">Active</span>
+        </info-label>
+        <info-content>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit sequi atque dolores, iure ex nemo?
+        </info-content>
+      </info-item>
+      <info-item>
+        <info-label>
+          <span class="color-inactive">Inactive</span>
+        </info-label>
+        <info-content>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio blanditiis doloribus sequi.
+        </info-content>
+      </info-item>
+
+      <info-item>
+        <info-label>
+          <span class="color-warn">Pending</span>
+        </info-label>
+        <info-content>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error iure earum facere quidem assumenda
+          fugit odit aperiam quisquam hic.
+        </info-content>
+      </info-item>
+
+    </info-section>
+
+    <info-section>
+      <info-section-title>Subscription Status</info-section-title>
+
+      <info-item>
+        <info-label>
+          <span class="color-active">Active</span>
+        </info-label>
+        <info-content>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, repellat.
+        </info-content>
+      </info-item>
+      <info-item>
+        <info-label>
+          <span class="color-inactive">Inactive</span>
+        </info-label>
+        <info-content>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae atque eaque tempore laudantium!
+        </info-content>
+      </info-item>
+    </info-section>
+
+  </info-dialog>
+
+</ng-template>

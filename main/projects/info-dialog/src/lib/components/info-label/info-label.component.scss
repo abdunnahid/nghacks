@@ -1,0 +1,15 @@
+.info-label {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+    >h4 {
+        margin: 0;
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+        overflow-wrap: anywhere;
+    }
+
+    width: 120px;
+}

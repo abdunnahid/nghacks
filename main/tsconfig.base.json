@@ -35,6 +35,10 @@
       "uploader": [
         "dist/uploader/uploader",
         "dist/uploader"
+      ],
+      "info-dialog": [
+        "dist/info-dialog/info-dialog",
+        "dist/info-dialog"
       ]
     }
   }
