@@ -3,4 +3,5 @@ export interface INavigation {
   title: string;
   route: string;
   icon: string;
+  exactMatch?: boolean;
 }

@@ -9,10 +9,23 @@
 
   <section class="sidenav-list">
 
-    <a *ngFor="let navItem of navigation" mat-button class="nav-link" [routerLink]="navItem.route"
-      [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
-      {{navItem.title}}
-    </a>
+    <ng-container *ngFor="let navItem of navigation">
+
+      <a
+        class="nav-link"
+        mat-button
+        [routerLink]="navItem.route"
+        [routerLinkActiveOptions]="{exact: navItem?.exactMatch}"
+        [routerLinkActive]="['active']">
+
+        <mat-icon class="mr-10" *ngIf="navItem?.icon">{{navItem?.icon}}</mat-icon>
+        <span>{{navItem.title}}</span>
+
+      </a>
+
+    </ng-container>
+
+
 
   </section>
 

@@ -5,7 +5,8 @@ export const Navigation: INavigation[] = [
     id: 'home',
     title: 'Home',
     route: '/',
-    icon: ''
+    icon: 'home',
+    exactMatch: true
   },
   {
     id: 'mat-table-query-reflector',
