@@ -34,6 +34,11 @@ const routes: Routes = [
       .then(module => module.ImageViewerConsumerModule)
   },
   {
+    path: 'quantity-input',
+    loadChildren: () => import('./consumer-modules/quantity-input-consumer/quantity-input-consumer.module')
+      .then(module => module.QuantityInputConsumerModule)
+  },
+  {
     path: '**',
     redirectTo: ''
   }

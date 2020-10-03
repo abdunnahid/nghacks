@@ -67,4 +67,28 @@ Shows detail information on a dialog/modal
 [![npm](https://img.shields.io/npm/dw/@nghacks/info-dialog)](https://www.npmjs.com/package/@nghacks/info-dialog)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/abdunnahid/nghacks/npm-publish%20'info-dialog'?label=build%20%27info-dialog%27)
 
+---
+
+### [image-viewer](https://github.com/abdunnahid/nghacks/tree/master/main/projects/image-viewer)
+
+Shows full size image in a overlay maintaining the aspect ratio.
+
+[Live Preview](https://ng-hack.web.app/image-viewer)
+
+[![npm (scoped)](https://img.shields.io/npm/v/@nghacks/image-viewer?color=%23c53635)](https://www.npmjs.com/package/@nghacks/image-viewer)
+[![npm](https://img.shields.io/npm/dw/@nghacks/image-viewer)](https://www.npmjs.com/package/@nghacks/image-viewer)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/abdunnahid/nghacks/npm-publish%20'image-viewer'?label=build%20%27image-viewer%27)
+
+---
+
+### [quantity-input](https://github.com/abdunnahid/nghacks/tree/master/main/projects/quantity-input)
+
+Quantity input for shopping cart.
+
+[Live Preview](https://ng-hack.web.app/quantity-input)
+
+[![npm (scoped)](https://img.shields.io/npm/v/@nghacks/quantity-input?color=%23c53635)](https://www.npmjs.com/package/@nghacks/quantity-input)
+[![npm](https://img.shields.io/npm/dw/@nghacks/quantity-input)](https://www.npmjs.com/package/@nghacks/quantity-input)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/abdunnahid/nghacks/npm-publish%20'quantity-input'?label=build%20%27quantity-input%27)
+
 

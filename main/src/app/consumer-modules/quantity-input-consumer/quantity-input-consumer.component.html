@@ -1,0 +1,125 @@
+<section class="page page-details quantity-input-page">
+
+  <header>
+    <h1>Quantity Input</h1>
+  </header>
+
+  <main>
+
+    <div class="info">
+      <mat-expansion-panel>
+
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <h2>Info</h2>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div class="info-content">
+          <mat-list role="list">
+
+            <div mat-subheader>About</div>
+
+            <mat-list-item role="listitem">
+              <mat-icon mat-list-icon>done_all</mat-icon>
+              <h3 mat-line>Quantity input for shopping cart.</h3>
+            </mat-list-item>
+
+            <div mat-subheader>Don't understand what it does?</div>
+
+            <mat-list-item role="listitem">
+              <mat-icon mat-list-icon>navigate_next</mat-icon>
+              <h3 mat-line>See the examples below.</h3>
+              <p mat-line>They show diiferent usage of quantity input.</p>
+            </mat-list-item>
+
+          </mat-list>
+
+          <mat-list role="list">
+            <div mat-subheader>Installation & Usage</div>
+            <mat-list-item role="listitem">
+              <a class="mr-10" href="https://www.npmjs.com/package/@nghacks/quantity-input" target="_blank"
+                color="accent" mat-flat-button>
+                NPM
+              </a>
+              <a class="mr-10" href="https://github.com/abdunnahid/nghacks/tree/master/main/projects/quantity-input"
+                target="_blank" color="accent" mat-stroked-button>
+                GitHub
+              </a>
+              <a class="mr-10"
+                href="https://github.com/abdunnahid/nghacks/tree/master/main/src/app/consumer-modules/quantity-input"
+                target="_blank" color="accent" mat-button>
+                How this page made
+              </a>
+            </mat-list-item>
+          </mat-list>
+
+        </div>
+      </mat-expansion-panel>
+    </div>
+
+    <div class="page-content">
+
+      <div class="page-content-box-header">
+        <h2 class="page-content-box-title">Examples</h2>
+      </div>
+
+      <div class="page-content-box-content">
+
+
+        <mat-list>
+
+          <mat-list-item>
+            <mat-icon matListIcon>add_shopping_cart</mat-icon>
+            <h3 matLine> Basic </h3>
+            <p matLine></p>
+
+            <quantity-input></quantity-input>
+
+          </mat-list-item>
+
+          <mat-divider></mat-divider>
+
+          <form [formGroup]="quantityInputsForm">
+
+            <mat-list-item>
+              <mat-icon matListIcon>add_shopping_cart</mat-icon>
+              <h3 matLine> Inital Value with Limit </h3>
+              <p matLine> <strong>Inital: </strong> 5 | <strong>Limit: </strong> 15</p>
+
+              <quantity-input formControlName="inputOne" [limit]="15"></quantity-input>
+
+            </mat-list-item>
+          </form>
+
+
+          <mat-divider></mat-divider>
+
+          <mat-list-item>
+            <mat-icon matListIcon>add_shopping_cart</mat-icon>
+            <h3 matLine> Color </h3>
+            <p matLine> Use MatColors: <code>color='accent'</code></p>
+
+            <quantity-input color='accent' [(ngModel)]="x"></quantity-input>
+
+          </mat-list-item>
+
+          <mat-divider></mat-divider>
+
+          <mat-list-item>
+            <mat-icon matListIcon>add_shopping_cart</mat-icon>
+            <h3 matLine> Disabled </h3>
+            <p matLine></p>
+            <quantity-input disabled=true></quantity-input>
+
+          </mat-list-item>
+
+        </mat-list>
+
+      </div>
+
+    </div>
+
+  </main>
+
+</section>

@@ -40,6 +40,12 @@
     },
     {
       "path": "./projects/image-viewer/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/quantity-input/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/quantity-input/tsconfig.spec.json"
     }
   ],
 }

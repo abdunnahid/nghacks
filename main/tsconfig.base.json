@@ -43,6 +43,10 @@
       "image-viewer": [
         "dist/image-viewer/image-viewer",
         "dist/image-viewer"
+      ],
+      "quantity-input": [
+        "dist/quantity-input/quantity-input",
+        "dist/quantity-input"
       ]
     }
   }

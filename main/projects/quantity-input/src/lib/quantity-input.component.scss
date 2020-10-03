@@ -1,0 +1,36 @@
+.nghacks-quantity-input-container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    width: 36px;
+    min-width: initial;
+    padding: 0;
+    border-radius: 50%;
+  }
+
+  input {
+    box-sizing: border-box;
+    height: 36px;
+    text-align: center;
+    width: 40px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid;
+    margin: 0 5px;
+    background: transparent;
+  }
+
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+}

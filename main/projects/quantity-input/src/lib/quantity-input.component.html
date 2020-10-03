@@ -1,0 +1,13 @@
+<div class="nghacks-quantity-input-container">
+
+  <button (click)="decrease()" mat-raised-button [color]="color" [disabled]="disabled || quantityCtrl.value === 1">
+    <mat-icon>remove</mat-icon>
+  </button>
+
+  <input [style.borderColor]="disabled ? '#e0e0e0' : '#212121'" [formControl]="quantityCtrl" #queantityInputElem type="number" min="1" max="10">
+
+  <button (click)="increase()" mat-raised-button [color]="color" [disabled]="disabled || quantityCtrl.value === limit">
+    <mat-icon>add</mat-icon>
+  </button>
+
+</div>

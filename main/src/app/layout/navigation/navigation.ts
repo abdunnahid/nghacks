@@ -37,5 +37,11 @@ export const Navigation: INavigation[] = [
     title: 'Image Viewer',
     route: '/image-viewer',
     icon: ''
+  },
+  {
+    id: 'quantity-input',
+    title: 'Quantity Input',
+    route: '/quantity-input',
+    icon: ''
   }
 ];

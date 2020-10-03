@@ -38,10 +38,19 @@ export const HomeCardListData = [
   {
     title: 'Image Viewer',
     subtitle: 'Directive',
-    content: 'Shows full size image in a overlay maintaining the aspect ratio',
+    content: 'Shows full size image in a overlay maintaining the aspect ratio.',
     blogUrl: '',
     npmUrl: 'https://www.npmjs.com/package/@nghacks/image-viewer',
     badgeUrl: 'https://img.shields.io/npm/v/@nghacks/image-viewer?color=%23c53635&style=for-the-badge',
     route: '/image-viewer'
+  },
+  {
+    title: 'Quantity Input',
+    subtitle: 'Component',
+    content: 'Quantity input for shopping cart.',
+    blogUrl: '',
+    npmUrl: 'https://www.npmjs.com/package/@nghacks/quantity-input',
+    badgeUrl: 'https://img.shields.io/npm/v/@nghacks/quantity-input?color=%23c53635&style=for-the-badge',
+    route: '/quantity-input'
   }
 ];
