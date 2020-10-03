@@ -22,7 +22,7 @@
     "e2e": "ng e2e",
     "build:prod": "npm run build:packages:prod && npm run build:app:prod",
     "build:app:prod": "ng build --prod",
-    "build:packages:prod": "npm run build:prod:ngmat-table-query-reflector && npm run build:prod:dynamic-browser-title && npm run build:prod:uploader && npm run build:prod:info-dialog",
+    "build:packages:prod": "npm run build:prod:ngmat-table-query-reflector && npm run build:prod:dynamic-browser-title && npm run build:prod:uploader && npm run build:prod:info-dialog && npm run build:prod:image-viewer",
     "serve:ngmat-table-query-reflector": "ng build --project=ngmat-table-query-reflector --watch",
     "build:prod:ngmat-table-query-reflector": "ng build --project=ngmat-table-query-reflector --prod",
     "serve:dynamic-browser-title": "ng build --project=dynamic-browser-title --watch",
@@ -30,7 +30,9 @@
     "serve:uploader": "ng build --project=uploader --watch",
     "build:prod:uploader": "ng build --project=uploader --prod",
     "serve:info-dialog": "ng build --project=info-dialog --watch",
-    "build:prod:info-dialog": "ng build --project=info-dialog --prod"
+    "build:prod:info-dialog": "ng build --project=info-dialog --prod",
+    "serve:image-viewer": "ng build --project=image-viewer --watch",
+    "build:prod:image-viewer": "ng build --project=image-viewer --prod"
   },
   "private": true,
   "dependencies": {

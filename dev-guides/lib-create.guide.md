@@ -38,3 +38,5 @@ ng g lib <lib-name>
 9. Build & publish the package to NPM
 
 10. Create Github Action to update NPM package on push
+
+11. Update Website: Home page list.

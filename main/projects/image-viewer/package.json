@@ -1,15 +1,17 @@
 {
-  "name": "@nghacks/info-dialog",
-  "version": "0.1.1",
-  "description": "Shows detail information on a dialog/modal.",
+  "name": "@nghacks/image-viewer",
+  "version": "1.0.0",
+  "description": "Shows full size image in a overlay maintaining the aspect ratio",
   "keywords": [
     "angular",
     "material",
     "AngularMaterial",
     "nghacks",
     "dialog",
-    "info",
-    "component",
+    "overlay",
+    "image",
+    "viewer",
+    "image viewer",
     "ng",
     "ngx",
     "ngMat"
@@ -30,7 +32,8 @@
   "peerDependencies": {
     "@angular/common": "^10.0.5",
     "@angular/core": "^10.0.5",
-    "@angular/material": "^10.1.1"
+    "@angular/material": "^10.1.1",
+    "rxjs": "~6.5.5"
   },
   "dependencies": {
     "tslib": "^2.0.0"

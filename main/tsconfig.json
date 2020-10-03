@@ -34,6 +34,12 @@
     },
     {
       "path": "./projects/info-dialog/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/image-viewer/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/image-viewer/tsconfig.spec.json"
     }
   ],
 }

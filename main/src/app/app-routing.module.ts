@@ -29,6 +29,11 @@ const routes: Routes = [
       .then(module => module.InfoDialogConsumerModule)
   },
   {
+    path: 'image-viewer',
+    loadChildren: () => import('./consumer-modules/image-viewer-consumer/image-viewer-consumer.module')
+      .then(module => module.ImageViewerConsumerModule)
+  },
+  {
     path: '**',
     redirectTo: ''
   }

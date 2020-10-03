@@ -39,6 +39,10 @@
       "info-dialog": [
         "dist/info-dialog/info-dialog",
         "dist/info-dialog"
+      ],
+      "image-viewer": [
+        "dist/image-viewer/image-viewer",
+        "dist/image-viewer"
       ]
     }
   }

@@ -1,0 +1,60 @@
+figure {
+  padding: 0;
+  margin: 0;
+  min-width: 72px;
+  min-height: 72px;
+}
+
+.img-loading-spinner-container {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-view-close-button {
+  position: fixed !important;
+  right: -100px;
+  top: -100px;
+  cursor: pointer;
+  animation: fade-in 0.2s linear both;
+  animation-delay: .2s;
+
+  button {
+    width: 72px;
+    height: 72px;
+    background-color: rgba($color: #000000, $alpha: .4);
+    color: #fff;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    right: -100px;
+    top: -100px;
+  }
+
+  100% {
+    right: -20px;
+    top: -20px;
+  }
+}
+
+
+::ng-deep .ng-hacks-image-viewer {
+  max-width: none !important;
+
+  .mat-dialog-container {
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    overflow: hidden;
+  }
+}
+
+::ng-deep .ng-hacks-image-viewer-backdrop {
+  cursor: zoom-out;
+  background: rgba(0, 0, 0, 0.32);
+}

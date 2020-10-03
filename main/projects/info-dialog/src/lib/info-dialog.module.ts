@@ -11,7 +11,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { InfoItemComponent } from './components/info-item/info-item.component';
-import { MatRippleModule } from '@angular/material/core';
 
 @NgModule({
     declarations: [

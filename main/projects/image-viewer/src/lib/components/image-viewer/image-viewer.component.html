@@ -1,0 +1,24 @@
+<figure *ngIf="imageLoaded; else loaderTemplate">
+
+  <img
+    [src]="src"
+    [alt]="alt"
+    [style.width]="calculatedImageDimension?.width+'px'"
+    [style.height]="calculatedImageDimension?.height+'px'"
+  >
+</figure>
+
+<div class="image-view-close-button" *ngIf="!hideCloseBtn">
+  <button mat-icon-button mat-dialog-close>
+    <mat-icon>close</mat-icon>
+  </button>
+</div>
+
+
+<ng-template #loaderTemplate>
+  <div class="img-loading-spinner-container">
+    <mat-spinner></mat-spinner>
+  </div>
+</ng-template>
+
+

@@ -1,0 +1,149 @@
+<section class="page page-details image-viewer-page">
+
+  <header>
+    <h1>Image Viewer</h1>
+  </header>
+
+  <main>
+
+    <div class="info">
+      <mat-expansion-panel>
+
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <h2>Info</h2>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div class="info-content">
+          <mat-list role="list">
+
+            <div mat-subheader>About</div>
+
+            <mat-list-item role="listitem">
+              <mat-icon mat-list-icon>done_all</mat-icon>
+              <h3 mat-line>Shows full size image in a overlay maintaining the aspect ratio.</h3>
+            </mat-list-item>
+
+            <div mat-subheader>Don't understand what it does?</div>
+
+            <mat-list-item role="listitem">
+              <mat-icon mat-list-icon>navigate_next</mat-icon>
+              <h3 mat-line>Try clicking the images and <strong>View</strong> button below.</h3>
+            </mat-list-item>
+
+            <mat-list-item role="listitem">
+              <mat-icon mat-list-icon>playlist_add_check</mat-icon>
+              <h3 mat-line>See the images in full screen in full size.</h3>
+            </mat-list-item>
+
+          </mat-list>
+
+          <mat-list role="list">
+            <div mat-subheader>Installation & Usage</div>
+            <mat-list-item role="listitem">
+              <a class="mr-10" href="https://www.npmjs.com/package/@nghacks/image-viewer" target="_blank" color="accent"
+                mat-flat-button>
+                NPM
+              </a>
+              <a class="mr-10" href="https://github.com/abdunnahid/nghacks/tree/master/main/projects/image-viewer" target="_blank"
+                color="accent" mat-stroked-button>
+                GitHub
+              </a>
+              <a class="mr-10" href="https://github.com/abdunnahid/nghacks/tree/master/main/src/app/consumer-modules/image-viewer" target="_blank" color="accent"
+                mat-button>
+                How this page made
+              </a>
+            </mat-list-item>
+          </mat-list>
+
+        </div>
+      </mat-expansion-panel>
+    </div>
+
+
+    <div class="page-content">
+
+      <div class="page-content-box-header">
+        <h2 class="page-content-box-title">Examples</h2>
+        <h3 class="page-content-box-subtitle">Click on images to see a full size view</h3>
+      </div>
+
+      <div class="page-content-box-content">
+
+
+        <mat-list>
+
+          <mat-list-item>
+            <img matListAvatar imageViewer src="https://picsum.photos/200/300">
+            <h3 matLine> 200*300 </h3>
+            <p matLine> Small sized image.</p>
+          </mat-list-item>
+
+          <mat-divider></mat-divider>
+
+          <mat-list-item>
+            <img matListAvatar imageViewer src="https://picsum.photos/500/500">
+            <h3 matLine> 500*500 </h3>
+            <p matLine> Squeare sized image.</p>
+          </mat-list-item>
+
+          <mat-divider></mat-divider>
+
+          <mat-list-item>
+            <img matListAvatar imageViewer src="https://picsum.photos/1920/1080">
+            <h3 matLine> 1920*1080 </h3>
+            <p matLine> Beautifully sized landscape image.</p>
+          </mat-list-item>
+
+          <mat-divider></mat-divider>
+
+          <mat-list-item>
+            <img matListAvatar imageViewer src="https://picsum.photos/2000/5000">
+            <h3 matLine> 2000*5000 </h3>
+            <p matLine> Super long image.</p>
+          </mat-list-item>
+
+          <mat-divider></mat-divider>
+
+          <mat-list-item>
+            <img matListAvatar imageViewer src="https://picsum.photos/5000/1000">
+            <h3 matLine> 5000*1000 </h3>
+            <p matLine> Super wide images</p>
+          </mat-list-item>
+
+          <mat-divider></mat-divider>
+
+          <mat-list-item>
+            <img matListAvatar imageViewer [disabled]="true" src="https://picsum.photos/300/300">
+            <h3 matLine> Disabled </h3>
+            <p matLine> Clicking this will view image & cursor is also set to initial.</p>
+          </mat-list-item>
+
+          <mat-divider></mat-divider>
+
+          <mat-list-item>
+            <img matListAvatar imageViewer="https://picsum.photos/3000/3000" src="https://picsum.photos/100/100">
+            <h3 matLine> Avatar: 100*100 | Viewer: 3000*3000 </h3>
+            <p matLine> Clicking this will view image different image.</p>
+          </mat-list-item>
+
+          <mat-divider></mat-divider>
+
+          <mat-list-item>
+            <mat-icon matListIcon>person</mat-icon>
+            <h3 matLine> Works with any element </h3>
+            <p matLine> Use button to view image.</p>
+            <button mat-raised-button color="accent" imageViewer="https://picsum.photos/300/300">View</button>
+          </mat-list-item>
+
+        </mat-list>
+
+      </div>
+
+    </div>
+
+
+  </main>
+
+</section>

@@ -32,4 +32,10 @@ export const Navigation: INavigation[] = [
     route: '/info-dialog',
     icon: ''
   },
+  {
+    id: 'image-viewer',
+    title: 'Image Viewer',
+    route: '/image-viewer',
+    icon: ''
+  }
 ];

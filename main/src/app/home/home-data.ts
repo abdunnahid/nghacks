@@ -34,5 +34,14 @@ export const HomeCardListData = [
     npmUrl: 'https://www.npmjs.com/package/@nghacks/info-dialog',
     badgeUrl: 'https://img.shields.io/npm/v/@nghacks/info-dialog?color=%23c53635&style=for-the-badge',
     route: '/info-dialog'
+  },
+  {
+    title: 'Image Viewer',
+    subtitle: 'Directive',
+    content: 'Shows full size image in a overlay maintaining the aspect ratio',
+    blogUrl: '',
+    npmUrl: 'https://www.npmjs.com/package/@nghacks/image-viewer',
+    badgeUrl: 'https://img.shields.io/npm/v/@nghacks/image-viewer?color=%23c53635&style=for-the-badge',
+    route: '/image-viewer'
   }
 ];
