@@ -1,9 +1,9 @@
-name: npm-publish 'uploader'
+name: npm-publish 'image-viewer'
 on:
   push:
     branches: [master]
     paths:
-      - "main/projects/uploader/**"
+      - "main/projects/image-viewer/**"
 jobs:
   npm-publish:
     name: npm-publish
@@ -23,15 +23,15 @@ jobs:
         run: npm install
 
       - name: Install Package Dependencies
-        working-directory: main/projects/uploader
+        working-directory: main/projects/image-viewer
         run: npm install
 
       - name: Build Package
         working-directory: ./main
-        run: npm run build:prod:uploader
+        run: npm run build:prod:image-viewer
 
       - name: Publish
         uses: JS-DevTools/npm-publish@v1
         with:
-          package: main/dist/uploader/package.json
+          package: main/dist/image-viewer/package.json
           token: ${{ secrets.NPM_AUTH_TOKEN }}
