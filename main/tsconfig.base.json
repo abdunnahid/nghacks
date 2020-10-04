@@ -51,6 +51,10 @@
       "rating-input": [
         "dist/rating-input/rating-input",
         "dist/rating-input"
+      ],
+      "banner-carousel": [
+        "dist/banner-carousel/banner-carousel",
+        "dist/banner-carousel"
       ]
     }
   }

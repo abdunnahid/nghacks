@@ -44,6 +44,11 @@ const routes: Routes = [
       .then(module => module.RatingInputConsumerModule)
   },
   {
+    path: 'banner-carousel',
+    loadChildren: () => import('./consumer-modules/banner-carousel-consumer/banner-carousel-consumer.module')
+      .then(module => module.BannerCarouselConsumerModule)
+  },
+  {
     path: '**',
     redirectTo: ''
   }

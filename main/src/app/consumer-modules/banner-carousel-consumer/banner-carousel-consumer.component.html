@@ -1,0 +1,74 @@
+<section class="page page-list banner-carousel-page">
+
+  <header>
+    <h1>Banner Carousel</h1>
+  </header>
+
+  <main>
+
+    <div class="info">
+      <mat-expansion-panel>
+
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <h2>Info</h2>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div class="info-content">
+          <mat-list role="list">
+
+            <div mat-subheader>About</div>
+
+            <mat-list-item role="listitem">
+              <mat-icon mat-list-icon>done_all</mat-icon>
+              <h3 mat-line>Image carousel for web page banner.</h3>
+            </mat-list-item>
+
+            <div mat-subheader>Don't understand what it does?</div>
+
+            <mat-list-item role="listitem">
+              <mat-icon mat-list-icon>navigate_next</mat-icon>
+              <h3 mat-line>See the example below.</h3>
+            </mat-list-item>
+
+          </mat-list>
+
+          <mat-list role="list">
+            <div mat-subheader>Installation & Usage</div>
+            <mat-list-item role="listitem">
+              <a class="mr-10" href="https://www.npmjs.com/package/@nghacks/banner-carousel" target="_blank"
+                color="accent" mat-flat-button>
+                NPM
+              </a>
+              <a class="mr-10" href="https://github.com/abdunnahid/nghacks/tree/master/main/projects/banner-carousel"
+                target="_blank" color="accent" mat-stroked-button>
+                GitHub
+              </a>
+              <a class="mr-10"
+                href="https://github.com/abdunnahid/nghacks/tree/master/main/src/app/consumer-modules/banner-carousel-consumer"
+                target="_blank" color="accent" mat-button>
+                How this page made
+              </a>
+            </mat-list-item>
+          </mat-list>
+
+        </div>
+      </mat-expansion-panel>
+    </div>
+
+    <div class="page-content">
+
+      <banner-carousel
+        (imageClick)="onimageClick($event)"
+        (imageChange)="onimageClick($event)"
+        [height]="280"
+        [autoChangeInterval]="5000"
+        [data]="data">
+      </banner-carousel>
+
+    </div>
+
+  </main>
+
+</section>

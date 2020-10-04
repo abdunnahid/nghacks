@@ -1,0 +1,73 @@
+.nghacks-banner-carousel {
+  position: relative;
+
+  .image-container {
+    overflow: hidden;
+    cursor: pointer;
+  }
+}
+
+::ng-deep .nghacks-banner-carousel {
+  .invisible-tabs {
+    >.mat-tab-header {
+      display: none;
+    }
+  }
+
+  .left-btn,
+  .right-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 33%;
+    padding: 0;
+    max-height: 100px;
+    min-width: initial;
+    width: 45px;
+    z-index: 2;
+
+    background: rgba($color: #fff, $alpha: .5);
+
+    &:hover {
+      background: #fff;
+    }
+
+    .mat-button-wrapper {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .mat-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+      }
+    }
+  }
+
+  .left-btn {
+    left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+    .mat-icon {
+      padding-right: 3px;
+    }
+  }
+
+  .right-btn {
+    right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+    .mat-icon {
+      padding-left: 3px;
+    }
+  }
+
+
+}
+

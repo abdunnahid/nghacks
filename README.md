@@ -91,7 +91,6 @@ Quantity input for shopping cart.
 [![npm](https://img.shields.io/npm/dw/@nghacks/quantity-input)](https://www.npmjs.com/package/@nghacks/quantity-input)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/abdunnahid/nghacks/npm-publish%20'quantity-input'?label=build%20%27quantity-input%27)
 
-
 ---
 
 ### [rating-input](https://github.com/abdunnahid/nghacks/tree/master/main/projects/rating-input)
@@ -103,5 +102,17 @@ Rating input for products/services.
 [![npm (scoped)](https://img.shields.io/npm/v/@nghacks/rating-input?color=%23c53635)](https://www.npmjs.com/package/@nghacks/rating-input)
 [![npm](https://img.shields.io/npm/dw/@nghacks/rating-input)](https://www.npmjs.com/package/@nghacks/rating-input)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/abdunnahid/nghacks/npm-publish%20'rating-input'?label=build%20%27rating-input%27)
+
+---
+
+### [banner-carousel](https://github.com/abdunnahid/nghacks/tree/master/main/projects/banner-carousel)
+
+Image carousel for web page banner.
+
+[Live Preview](https://ng-hack.web.app/banner-carousel)
+
+[![npm (scoped)](https://img.shields.io/npm/v/@nghacks/banner-carousel?color=%23c53635)](https://www.npmjs.com/package/@nghacks/banner-carousel)
+[![npm](https://img.shields.io/npm/dw/@nghacks/banner-carousel)](https://www.npmjs.com/package/@nghacks/banner-carousel)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/abdunnahid/nghacks/npm-publish%20'banner-carousel'?label=build%20%27banner-carousel%27)
 
 

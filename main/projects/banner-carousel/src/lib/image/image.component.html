@@ -1,0 +1,9 @@
+<ng-container *ngIf="hasImageLoaded; else elseTemplate">
+  <img [src]="src" [alt]="alt">
+</ng-container>
+
+<ng-template #elseTemplate>
+
+  <div class="skeleton-box"></div>
+
+</ng-template>

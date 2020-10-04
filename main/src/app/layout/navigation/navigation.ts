@@ -9,15 +9,15 @@ export const Navigation: INavigation[] = [
     exactMatch: true
   },
   {
-    id: 'mat-table-query-reflector',
-    title: 'Mat Table Query Reflector',
-    route: '/mat-table-query-reflector',
-    icon: ''
-  },
-  {
     id: 'dynamic-browser-title',
     title: 'Dynamic Browser title',
     route: '/dynamic-browser-title',
+    icon: ''
+  },
+  {
+    id: 'mat-table-query-reflector',
+    title: 'Mat Table Query Reflector',
+    route: '/mat-table-query-reflector',
     icon: ''
   },
   {
@@ -48,6 +48,12 @@ export const Navigation: INavigation[] = [
     id: 'rating-input',
     title: 'Rating Input',
     route: '/rating-input',
+    icon: ''
+  },
+  {
+    id: 'banner-carousel',
+    title: 'Banner Carousel',
+    route: '/banner-carousel',
     icon: ''
   }
 ];

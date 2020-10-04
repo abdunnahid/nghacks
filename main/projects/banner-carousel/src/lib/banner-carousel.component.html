@@ -1,0 +1,25 @@
+<div class="nghacks-banner-carousel">
+
+  <button mat-raised-button class="left-btn" (click)="previous();resetTimer()">
+    <mat-icon>navigate_before</mat-icon>
+  </button>
+
+  <mat-tab-group
+  class="invisible-tabs"
+  [selectedIndex]="activeBanner-1"
+  animationDuration='.3s'
+  [disablePagination]="false">
+
+    <mat-tab *ngFor="let img of data; let i=index" [label]="i">
+      <div class="image-container" [style.height]="height+'px'" (click)="imageClick.emit(img)">
+        <image [src]="img.src" [alt]="img.alt"></image>
+      </div>
+    </mat-tab>
+
+  </mat-tab-group>
+
+  <button mat-raised-button class="right-btn" (click)="next();resetTimer()">
+    <mat-icon>navigate_next</mat-icon>
+  </button>
+
+</div>

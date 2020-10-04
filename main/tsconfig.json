@@ -52,6 +52,12 @@
     },
     {
       "path": "./projects/rating-input/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/banner-carousel/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/banner-carousel/tsconfig.spec.json"
     }
   ],
 }
