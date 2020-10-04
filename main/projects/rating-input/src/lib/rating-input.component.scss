@@ -1,0 +1,42 @@
+.rating-input {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  .mat-icon {
+    &.rated-icon {
+      &.animate {
+        animation: flip-vertical-fwd 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+      }
+    }
+
+    &.not-rated-icon {
+      color: rgba($color: #000000, $alpha: .5);
+
+      &.animate {
+        animation: flip-vertical-bck 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+      }
+    }
+  }
+}
+
+@keyframes flip-vertical-bck {
+  0% {
+    transform: translateZ(0) rotateY(0);
+  }
+
+  100% {
+    transform: translateZ(-260px) rotateY(-180deg);
+  }
+}
+
+
+@keyframes flip-vertical-fwd {
+  0% {
+    transform: translateZ(0) rotateY(0);
+  }
+
+  100% {
+    transform: translateZ(160px) rotateY(180deg);
+  }
+}

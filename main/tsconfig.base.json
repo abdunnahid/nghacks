@@ -47,6 +47,10 @@
       "quantity-input": [
         "dist/quantity-input/quantity-input",
         "dist/quantity-input"
+      ],
+      "rating-input": [
+        "dist/rating-input/rating-input",
+        "dist/rating-input"
       ]
     }
   }

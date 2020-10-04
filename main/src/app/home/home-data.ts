@@ -52,5 +52,14 @@ export const HomeCardListData = [
     npmUrl: 'https://www.npmjs.com/package/@nghacks/quantity-input',
     badgeUrl: 'https://img.shields.io/npm/v/@nghacks/quantity-input?color=%23c53635&style=for-the-badge',
     route: '/quantity-input'
+  },
+  {
+    title: 'Rating Input',
+    subtitle: 'Component',
+    content: 'Rating input for products / services.',
+    blogUrl: '',
+    npmUrl: 'https://www.npmjs.com/package/@nghacks/rating-input',
+    badgeUrl: 'https://img.shields.io/npm/v/@nghacks/rating-input?color=%23c53635&style=for-the-badge',
+    route: '/rating-input'
   }
 ];

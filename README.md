@@ -92,3 +92,16 @@ Quantity input for shopping cart.
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/abdunnahid/nghacks/npm-publish%20'quantity-input'?label=build%20%27quantity-input%27)
 
 
+---
+
+### [rating-input](https://github.com/abdunnahid/nghacks/tree/master/main/projects/rating-input)
+
+Rating input for products/services.
+
+[Live Preview](https://ng-hack.web.app/rating-input)
+
+[![npm (scoped)](https://img.shields.io/npm/v/@nghacks/rating-input?color=%23c53635)](https://www.npmjs.com/package/@nghacks/rating-input)
+[![npm](https://img.shields.io/npm/dw/@nghacks/rating-input)](https://www.npmjs.com/package/@nghacks/rating-input)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/abdunnahid/nghacks/npm-publish%20'rating-input'?label=build%20%27rating-input%27)
+
+

@@ -46,6 +46,12 @@
     },
     {
       "path": "./projects/quantity-input/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/rating-input/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/rating-input/tsconfig.spec.json"
     }
   ],
 }

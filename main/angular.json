@@ -371,6 +371,46 @@
           }
         }
       }
+    },
+    "rating-input": {
+      "projectType": "library",
+      "root": "projects/rating-input",
+      "sourceRoot": "projects/rating-input/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/rating-input/tsconfig.lib.json",
+            "project": "projects/rating-input/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/rating-input/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/rating-input/src/test.ts",
+            "tsConfig": "projects/rating-input/tsconfig.spec.json",
+            "karmaConfig": "projects/rating-input/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/rating-input/tsconfig.lib.json",
+              "projects/rating-input/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "nghacks"

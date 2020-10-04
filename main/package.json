@@ -22,7 +22,7 @@
     "e2e": "ng e2e",
     "build:prod": "npm run build:packages:prod && npm run build:app:prod",
     "build:app:prod": "ng build --prod",
-    "build:packages:prod": "npm run build:prod:ngmat-table-query-reflector && npm run build:prod:dynamic-browser-title && npm run build:prod:uploader && npm run build:prod:info-dialog && npm run build:prod:image-viewer && npm run build:prod:quantity-input",
+    "build:packages:prod": "npm run build:prod:ngmat-table-query-reflector && npm run build:prod:dynamic-browser-title && npm run build:prod:uploader && npm run build:prod:info-dialog && npm run build:prod:image-viewer && npm run build:prod:quantity-input && npm run build:prod:rating-input",
     "serve:ngmat-table-query-reflector": "ng build --project=ngmat-table-query-reflector --watch",
     "build:prod:ngmat-table-query-reflector": "ng build --project=ngmat-table-query-reflector --prod",
     "serve:dynamic-browser-title": "ng build --project=dynamic-browser-title --watch",
@@ -34,7 +34,9 @@
     "serve:image-viewer": "ng build --project=image-viewer --watch",
     "build:prod:image-viewer": "ng build --project=image-viewer --prod",
     "serve:quantity-input": "ng build --project=quantity-input --watch",
-    "build:prod:quantity-input": "ng build --project=quantity-input --prod"
+    "build:prod:quantity-input": "ng build --project=quantity-input --prod",
+    "serve:rating-input": "ng build --project=rating-input --watch",
+    "build:prod:rating-input": "ng build --project=rating-input --prod"
   },
   "private": true,
   "dependencies": {

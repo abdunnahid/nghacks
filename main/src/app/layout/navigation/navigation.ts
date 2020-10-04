@@ -43,5 +43,11 @@ export const Navigation: INavigation[] = [
     title: 'Quantity Input',
     route: '/quantity-input',
     icon: ''
+  },
+  {
+    id: 'rating-input',
+    title: 'Rating Input',
+    route: '/rating-input',
+    icon: ''
   }
 ];

@@ -1,7 +1,7 @@
 {
-  "name": "@nghacks/quantity-input",
-  "version": "1.0.1",
-  "description": "Quantity input for shopping cart",
+  "name": "@nghacks/rating-input",
+  "version": "1.0.0",
+  "description": "Rating input for products/services.",
   "keywords": [
     "angular",
     "material",
@@ -9,10 +9,11 @@
     "nghacks",
     "input",
     "form",
-    "quantity",
+    "rating",
     "number",
     "counter",
-    "cart",
+    "star",
+    "heart",
     "ng",
     "ngx",
     "ngMat"

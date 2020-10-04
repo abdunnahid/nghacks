@@ -1,0 +1,156 @@
+<section class="page page-details rating-input-page">
+
+  <header>
+    <h1>Rating Input</h1>
+  </header>
+
+  <main>
+
+    <div class="info">
+      <mat-expansion-panel>
+
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <h2>Info</h2>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div class="info-content">
+          <mat-list role="list">
+
+            <div mat-subheader>About</div>
+
+            <mat-list-item role="listitem">
+              <mat-icon mat-list-icon>done_all</mat-icon>
+              <h3 mat-line>Rating input for products / services.</h3>
+            </mat-list-item>
+
+            <div mat-subheader>Don't understand what it does?</div>
+
+            <mat-list-item role="listitem">
+              <mat-icon mat-list-icon>navigate_next</mat-icon>
+              <h3 mat-line>See the examples below.</h3>
+              <p mat-line>They show diiferent usage of rating input.</p>
+            </mat-list-item>
+
+          </mat-list>
+
+          <mat-list role="list">
+            <div mat-subheader>Installation & Usage</div>
+            <mat-list-item role="listitem">
+              <a class="mr-10" href="https://www.npmjs.com/package/@nghacks/rating-input" target="_blank"
+                color="accent" mat-flat-button>
+                NPM
+              </a>
+              <a class="mr-10" href="https://github.com/abdunnahid/nghacks/tree/master/main/projects/rating-input"
+                target="_blank" color="accent" mat-stroked-button>
+                GitHub
+              </a>
+              <a class="mr-10"
+                href="https://github.com/abdunnahid/nghacks/tree/master/main/src/app/consumer-modules/rating-input-consumer"
+                target="_blank" color="accent" mat-button>
+                How this page made
+              </a>
+            </mat-list-item>
+          </mat-list>
+
+        </div>
+      </mat-expansion-panel>
+    </div>
+
+    <div class="page-content">
+
+      <div class="page-content-box-header">
+        <h2 class="page-content-box-title">Examples</h2>
+      </div>
+
+      <div class="page-content-box-content">
+
+
+        <mat-list>
+
+          <mat-list-item>
+            <mat-icon matListIcon>stars</mat-icon>
+            <h3 matLine> Basic </h3>
+            <p matLine></p>
+
+            <div>
+              <rating-input></rating-input>
+            </div>
+
+          </mat-list-item>
+
+          <mat-divider></mat-divider>
+
+          <form [formGroup]="ratingInputsForm">
+            <mat-list-item>
+              <mat-icon matListIcon>favorite</mat-icon>
+              <h3 matLine> Change MatIcons </h3>
+              <p matLine> <code>ratedIcon='favorite'</code> | notRatedIcon='favorite_border'</p>
+
+              <rating-input
+                formControlName="inputOne"
+                ratedIconColor='red'
+                ratedIcon='favorite'
+                notRatedIcon='favorite_border'>
+              </rating-input>
+            </mat-list-item>
+          </form>
+
+
+          <mat-divider></mat-divider>
+
+          <mat-list-item>
+            <mat-icon matListIcon>insert_emoticon</mat-icon>
+            <h3 matLine> Animation & Color</h3>
+            <p matLine> <code>[animation]="false"</code> | <code>ratedIconColor='#2a9b8e'</code></p>
+
+            <rating-input
+              [animation]="false"
+              ratedIconColor='#2a9b8e'
+              ratedIcon='insert_emoticon'
+              notRatedIcon='sentiment_satisfied_alt'>
+            </rating-input>
+
+          </mat-list-item>
+
+          <mat-divider></mat-divider>
+
+          <mat-list-item>
+            <mat-icon matListIcon>add_circle</mat-icon>
+            <h3 matLine> Modify Rating Count </h3>
+            <p matLine><code>ratingCount=7</code></p>
+
+            <rating-input
+              ratedIconColor="#26515b"
+              ratingCount=7
+              ratedIcon='add_circle_outline'
+              notRatedIcon='remove_circle_outline'>
+            </rating-input>
+
+          </mat-list-item>
+
+          <mat-divider></mat-divider>
+
+          <mat-list-item>
+            <mat-icon matListIcon>not_interested</mat-icon>
+            <h3 matLine> Disabled </h3>
+            <p matLine></p>
+
+            <rating-input
+              [(ngModel)]="x"
+              disabled=true
+              ratedIcon='insert_emoticon'
+              notRatedIcon='not_interested'>
+            </rating-input>
+
+          </mat-list-item>
+
+        </mat-list>
+      </div>
+
+    </div>
+
+  </main>
+
+</section>

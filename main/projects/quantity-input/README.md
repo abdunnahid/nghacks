@@ -67,3 +67,14 @@ export class ConsumerModule { }
   @Input() disabled: boolean;
 
 ```
+## Outputs
+
+```typescript
+
+  /**
+   * @description Emits on input change
+   */
+  @Output() quantityChange: number;
+
+```
+

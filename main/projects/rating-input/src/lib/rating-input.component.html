@@ -1,0 +1,26 @@
+<div class="rating-input">
+  <button
+    mat-icon-button
+    [disabled]="disabled"
+    *ngFor="let starred of stars; let i = index; trackBy: trackByFn"
+    (click)="rate(starred ? (value > i+1 ? i+1 : i) : i+1)">
+
+    <ng-container *ngIf="starred; else noStar">
+      <mat-icon
+        [ngClass]="{'animate': animation}"
+        class="rated-icon"
+        [style.color]="ratedIconColor">
+        {{ratedIcon}}
+      </mat-icon>
+    </ng-container>
+
+    <ng-template #noStar>
+      <mat-icon
+        [ngClass]="{'animate': animation}"
+        class="not-rated-icon">
+        {{notRatedIcon}}
+      </mat-icon>
+    </ng-template>
+
+  </button>
+</div>

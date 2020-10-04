@@ -39,6 +39,11 @@ const routes: Routes = [
       .then(module => module.QuantityInputConsumerModule)
   },
   {
+    path: 'rating-input',
+    loadChildren: () => import('./consumer-modules/rating-input-consumer/rating-input-consumer.module')
+      .then(module => module.RatingInputConsumerModule)
+  },
+  {
     path: '**',
     redirectTo: ''
   }
