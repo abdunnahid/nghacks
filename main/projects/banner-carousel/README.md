@@ -12,13 +12,13 @@ Image carousel for web page banner.
 npm install @nghacks/banner-carousel
 ```
 
-> Import `BannerCaoruselModule` to your consumer module.
+> Import `BannerCarouselModule` to your consumer module.
 
 ```typescript
 import { NgModule } from '@angular/core';
 ...
 ...
-import { BannerCaoruselModule } from '@nghacks/banner-carousel';
+import { BannerCarouselModule } from '@nghacks/banner-carousel';
 
 @NgModule({
   declarations: [
@@ -26,13 +26,13 @@ import { BannerCaoruselModule } from '@nghacks/banner-carousel';
   ],
   imports: [
     ...
-    BannerCaoruselModule
+    BannerCarouselModule
   ]
 })
 export class ConsumerModule { }
 ```
 
-> Use with reactive form or template driven form
+> Use Component in template
 
 ```html
 <banner-carousel
