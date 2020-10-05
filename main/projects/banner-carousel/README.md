@@ -1,4 +1,4 @@
-# Rating Input
+# Image carousel
 
 Image carousel for web page banner.
 
