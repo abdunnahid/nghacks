@@ -1,23 +1,20 @@
 # NgHacks
 
-![Nh Hacks](https://github.com/abdunnahid/nghacks/blob/master/main/src/assets/banners/banner.jpg?raw=true)
+## Custom UI components built with Angular & Angular Material
 
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/abdunnahid/nghacks)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/abdunnahid/nghacks/CI%20-%20Main%20App?label=web%20preview%20build)
 ![GitHub](https://img.shields.io/github/license/abdunnahid/nghacks)
 
 
-Useful reusable pieces built with Angular, Angular Material and some sort of Hack.
+### Live Preview
 
-
-## Web Preview
-
-Browse website: [ng-hack.web.app](https://ng-hack.web.app/)
+Browse: [ng-hack.web.app](https://ng-hack.web.app/)
 
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fng-hack.web.app%2F)](https://ng-hack.web.app/)
 [![W3C Validation](https://img.shields.io/w3c-validation/html?preset=HTML%2C%20SVG%201.1%2C%20MathML%203.0&targetUrl=https%3A%2F%2Fng-hack.web.app%2F)](https://ng-hack.web.app/)
 
-## Hacks
+## Components
 
 ### [ngmat-table-query-reflector](https://github.com/abdunnahid/nghacks/tree/master/main/projects/ngmat-table-query-reflector)
 
