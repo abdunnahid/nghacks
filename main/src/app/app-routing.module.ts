@@ -49,6 +49,11 @@ const routes: Routes = [
       .then(module => module.BannerCarouselConsumerModule)
   },
   {
+    path: 'overflow-carousel',
+    loadChildren: () => import('./consumer-modules/overflow-carousel-consumer/overflow-carousel-consumer.module')
+      .then(module => module.OverflowCarouselConsumerModule)
+  },
+  {
     path: '**',
     redirectTo: ''
   }

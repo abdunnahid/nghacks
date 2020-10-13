@@ -1,0 +1,28 @@
+<div #carouselContainer class="nghacks-overflow-carousel" resized>
+
+  <ng-container *ngIf="sliderButtonsVisibility.showLeftSlider">
+    <div class="left-btn" (click)="previous()">
+      <ng-content select="[slide-left-button]"></ng-content>
+    </div>
+  </ng-container>
+
+
+  <div
+    resized
+    #carousel
+    [style.transform]="'translateX('+carouselPosition+'px)'"
+    [style.transitionDuration]="transitionDuration+'s'"
+    class="overflowing-carousel-container">
+
+    <ng-content></ng-content>
+
+  </div>
+
+  <ng-container *ngIf="sliderButtonsVisibility.showRightSlider">
+    <div class="right-btn" (click)="next()">
+      <ng-content select="[slide-right-button]"></ng-content>
+    </div>
+  </ng-container>
+
+
+</div>

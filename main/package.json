@@ -22,7 +22,7 @@
     "e2e": "ng e2e",
     "build:prod": "npm run build:packages:prod && npm run build:app:prod",
     "build:app:prod": "ng build --prod",
-    "build:packages:prod": "npm run build:prod:ngmat-table-query-reflector && npm run build:prod:dynamic-browser-title && npm run build:prod:uploader && npm run build:prod:info-dialog && npm run build:prod:image-viewer && npm run build:prod:quantity-input && npm run build:prod:rating-input && npm run build:prod:banner-carousel",
+    "build:packages:prod": "npm run build:prod:ngmat-table-query-reflector && npm run build:prod:dynamic-browser-title && npm run build:prod:uploader && npm run build:prod:info-dialog && npm run build:prod:image-viewer && npm run build:prod:quantity-input && npm run build:prod:rating-input && npm run build:prod:banner-carousel && npm run build:prod:overflow-carousel",
     "serve:ngmat-table-query-reflector": "ng build --project=ngmat-table-query-reflector --watch",
     "build:prod:ngmat-table-query-reflector": "ng build --project=ngmat-table-query-reflector --prod",
     "serve:dynamic-browser-title": "ng build --project=dynamic-browser-title --watch",
@@ -38,7 +38,9 @@
     "serve:rating-input": "ng build --project=rating-input --watch",
     "build:prod:rating-input": "ng build --project=rating-input --prod",
     "serve:banner-carousel": "ng build --project=banner-carousel --watch",
-    "build:prod:banner-carousel": "ng build --project=banner-carousel --prod"
+    "build:prod:banner-carousel": "ng build --project=banner-carousel --prod",
+    "serve:overflow-carousel": "ng build --project=overflow-carousel --watch",
+    "build:prod:overflow-carousel": "ng build --project=overflow-carousel --prod"
   },
   "private": true,
   "dependencies": {
@@ -53,6 +55,7 @@
     "@angular/platform-browser": "~10.0.4",
     "@angular/platform-browser-dynamic": "~10.0.4",
     "@angular/router": "~10.0.4",
+    "angular-resize-event": "^2.0.0",
     "ngx-markdown": "^10.1.0",
     "prismjs": "^1.21.0",
     "rxjs": "~6.5.5",

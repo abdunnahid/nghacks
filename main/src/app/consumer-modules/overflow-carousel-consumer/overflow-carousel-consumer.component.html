@@ -1,0 +1,262 @@
+<section class="page page-list overflow-carousel-page">
+
+  <header>
+    <h1>Overflow Carousel</h1>
+  </header>
+
+  <main>
+
+    <div class="info">
+      <mat-expansion-panel>
+
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <h2>Info</h2>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div class="info-content">
+          <mat-list role="list">
+
+            <div mat-subheader>About</div>
+
+            <mat-list-item role="listitem">
+              <mat-icon mat-list-icon>done_all</mat-icon>
+              <h3 mat-line>Show overflowing content as carousel.</h3>
+            </mat-list-item>
+
+            <div mat-subheader>Don't understand what it does?</div>
+
+            <mat-list-item role="listitem">
+              <mat-icon mat-list-icon>navigate_next</mat-icon>
+              <h3 mat-line>See the examples below that depicts different use cases of overflow-carousel.</h3>
+            </mat-list-item>
+
+            <mat-list-item role="listitem">
+              <mat-icon mat-list-icon>navigate_next</mat-icon>
+              <h3 mat-line>When content has no overflow, sliding actions can be hidden or disabled.</h3>
+            </mat-list-item>
+
+            <mat-list-item role="listitem">
+              <mat-icon mat-list-icon>navigate_next</mat-icon>
+              <h3 mat-line>Play around with 3rd example below to feel the dynamic behavior.</h3>
+            </mat-list-item>
+
+          </mat-list>
+
+          <mat-list role="list">
+            <div mat-subheader>Installation & Usage</div>
+            <mat-list-item role="listitem">
+              <a class="mr-10" href="https://www.npmjs.com/package/@nghacks/overflow-carousel" target="_blank"
+                color="accent" mat-flat-button>
+                NPM
+              </a>
+              <a class="mr-10" href="https://github.com/abdunnahid/nghacks/tree/master/main/projects/overflow-carousel"
+                target="_blank" color="accent" mat-stroked-button>
+                GitHub
+              </a>
+              <a class="mr-10"
+                href="https://github.com/abdunnahid/nghacks/tree/master/main/src/app/consumer-modules/overflow-carousel-consumer"
+                target="_blank" color="accent" mat-button>
+                How this page made
+              </a>
+            </mat-list-item>
+          </mat-list>
+
+        </div>
+      </mat-expansion-panel>
+    </div>
+
+    <!-- Image Gallery -->
+    <div class="page-content image-box">
+
+      <div class="page-content-box-header page-content-box-header-width-actions">
+        <div class="page-content-box-header-title-section">
+          <h2 class="page-content-box-title">Example: Image Gallery</h2>
+          <h3 class="page-content-box-subtitle">Basic implementation</h3>
+        </div>
+      </div>
+
+      <div class="page-content-box-content">
+        <overflow-carousel [slidePercentage]="1">
+
+          <button slide-left-button mat-raised-button class="left-btn">
+            <mat-icon>navigate_before</mat-icon>
+          </button>
+
+          <carousel-item *ngFor="let item of images" class="image-card">
+            <img [src]="item" class="mat-elevation-z2" width="100%" height="100%">
+          </carousel-item>
+
+          <button slide-right-button mat-raised-button class="right-btn">
+            <mat-icon>navigate_next</mat-icon>
+          </button>
+
+        </overflow-carousel>
+      </div>
+
+    </div>
+
+    <!-- Product List -->
+    <div class="page-content product-box">
+
+      <div class="page-content-box-header page-content-box-header-width-actions">
+        <div class="page-content-box-header-title-section">
+          <h2 class="page-content-box-title">Example: Product List</h2>
+          <h3 class="page-content-box-subtitle">Custom Slide Actions with slower animation</h3>
+        </div>
+        <div class="page-content-box-header-actions-section">
+
+          <button [disabled]="!imageCarousel.sliderButtonsVisibility.showLeftSlider" color="accent"
+            class="page-content-box-header-action" mat-mini-fab (click)="imageCarousel.previous()">
+
+            <mat-icon>navigate_before</mat-icon>
+
+          </button>
+
+          <button [disabled]="!imageCarousel.sliderButtonsVisibility.showRightSlider" color="accent"
+            class="page-content-box-header-action" mat-mini-fab (click)="imageCarousel.next()">
+
+            <mat-icon>navigate_next</mat-icon>
+
+          </button>
+
+        </div>
+      </div>
+
+      <div class="page-content-box-content">
+        <overflow-carousel #imageCarousel="overflowCarousel" [transitionDuration]=".8">
+
+          <carousel-item *ngFor="let item of products" class="product-card">
+            <mat-card>
+              <mat-card-header>
+                <div mat-card-avatar class="example-header-image">
+                  <img mat-card-avatar src="https://picsum.photos/100/100">
+                </div>
+                <mat-card-title>Product {{item}}</mat-card-title>
+                <mat-card-subtitle><strong>$500</strong></mat-card-subtitle>
+              </mat-card-header>
+              <img mat-card-image src="https://picsum.photos/id/0/300/200">
+              <mat-card-content>
+                <ul>
+                  <li>Lorem dolor sit amet consectetur.</li>
+                  <li>Lorem ipsum dolor sit.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+              </mat-card-content>
+              <mat-card-actions>
+                <div style="display: flex; justify-content: space-between;">
+                  <button mat-flat-button color="accent">
+                    <mat-icon>local_mall</mat-icon>
+                    Buy Now
+                  </button>
+                  <button mat-button color="accent">
+                    <mat-icon>add_shopping_cart</mat-icon>
+                    Add To Cart
+                  </button>
+                </div>
+              </mat-card-actions>
+            </mat-card>
+          </carousel-item>
+
+        </overflow-carousel>
+      </div>
+
+    </div>
+
+    <!-- Dynamic Data -->
+    <div class="page-content dynamic-items">
+
+      <div class="page-content-box-header page-content-box-header-width-actions">
+        <div class="page-content-box-header-title-section">
+          <h2 class="page-content-box-title">Example: Dynamic Carousel Item</h2>
+          <h3 class="page-content-box-subtitle">Behavior of dynamic data & responsiveness</h3>
+        </div>
+        <div class="page-content-box-header-actions-section">
+          <button color="warn" class="page-content-box-header-action" mat-mini-fab (click)="dynamicItems.pop()">
+            <mat-icon>remove</mat-icon>
+          </button>
+          <button color="accent" class="page-content-box-header-action" mat-mini-fab
+            (click)="dynamicItems.push(dynamicItems.length)">
+            <mat-icon>add</mat-icon>
+          </button>
+        </div>
+      </div>
+
+      <div class="page-content-box-content">
+        <overflow-carousel>
+
+          <button slide-left-button mat-fab>
+            <mat-icon>navigate_before</mat-icon>
+          </button>
+
+          <carousel-item *ngFor="let item of dynamicItems">
+            <div class="carousel-card">{{item}}</div>
+          </carousel-item>
+
+          <button slide-right-button mat-fab>
+            <mat-icon>navigate_next</mat-icon>
+          </button>
+
+        </overflow-carousel>
+
+      </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="page-content filters-box">
+
+      <div class="page-content-box-header page-content-box-header-width-actions">
+        <div class="page-content-box-header-title-section">
+          <h2 class="page-content-box-title">Example: Filters</h2>
+          <h3 class="page-content-box-subtitle">Use filters for data table or list</h3>
+        </div>
+      </div>
+
+      <div class="page-content-box-content">
+
+        <div class="filters">
+
+          <button mat-icon-button color="accent" class="mat-elevation-z2" (click)="filterCarousel.previous()"
+            *ngIf="filterCarousel.sliderButtonsVisibility.showLeftSlider">
+            <mat-icon>navigate_before</mat-icon>
+          </button>
+
+          <div class="filter-inputs-container">
+            <overflow-carousel [transitionDuration]=".2" #filterCarousel="overflowCarousel">
+
+              <carousel-item *ngFor="let item of filters" class="input-card">
+                <mat-form-field appearance="outline">
+                  <mat-label>Filter {{item}}</mat-label>
+                  <input matInput placeholder="Placeholder">
+                  <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                  <mat-hint>Hint {{item}}</mat-hint>
+                </mat-form-field>
+              </carousel-item>
+            </overflow-carousel>
+          </div>
+
+          <button slide-right-button mat-icon-button color="accent" class="mat-elevation-z2" (click)="filterCarousel.next()"
+            *ngIf="filterCarousel.sliderButtonsVisibility.showRightSlider">
+            <mat-icon>navigate_next</mat-icon>
+          </button>
+        </div>
+
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro repellendus labore earum rem voluptatem omnis
+          quasi, molestias atque, ab ad alias quos. Molestiae blanditiis delectus est pariatur voluptates voluptas
+          reprehenderit fugit dolores explicabo sunt, quam odit maxime ad incidunt a accusantium cum saepe cupiditate
+          officiis vero asperiores enim doloribus non nostrum. Quam ipsa, debitis consectetur animi earum id alias
+          corrupti nesciunt quis incidunt? Quas quod incidunt natus alias nihil fugit molestiae iusto accusantium esse
+          ratione consequuntur nemo maxime eum suscipit commodi, reprehenderit iste, totam, officia delectus ducimus
+          ipsum eaque. Laboriosam ad maiores quia quod hic, incidunt in harum sit autem!
+        </p>
+
+      </div>
+
+    </div>
+
+
+  </main>
+
+</section>

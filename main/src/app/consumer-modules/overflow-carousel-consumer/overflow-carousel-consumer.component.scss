@@ -1,0 +1,134 @@
+@import '../../../theming/variables';
+
+.overflow-carousel-page {
+
+  .image-box {
+    background: transparent;
+    box-shadow: none;
+
+    .image-card {
+      margin: 0 20px 20px 0;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .product-box {
+    background: transparent;
+    box-shadow: none;
+
+    .product-card {
+      max-width: 300px;
+      margin: 0 20px 20px 0;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      ul {
+        padding-left: 10px;
+      }
+    }
+  }
+
+  .dynamic-items {
+    .carousel-card {
+      width: 150px;
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 3px;
+      background-color: azure;
+    }
+  }
+
+  .filters-box {
+
+    .page-content-box-content {
+      padding: 0px 20px 20px;
+
+      .filters {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        button {
+          margin-top: 7px;
+        }
+
+        .filter-inputs-container {
+          flex: 1;
+          width: 100%;
+          overflow: hidden;
+          transition: all .4s;
+
+          .input-card {
+            margin-right: 10px;
+
+            &:last-of-type {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+::ng-deep .overflow-carousel-page .image-box {
+
+  .left-btn,
+  .right-btn {
+
+    min-width: initial;
+    width: 45px;
+    height: 100px;
+    color: #fff;
+
+    background: rgba($color: $accent, $alpha: .5);
+    transition: .3s all;
+
+    &:hover {
+      background: $accent;
+    }
+
+    .mat-button-wrapper {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .mat-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+      }
+    }
+  }
+
+  .left-btn {
+    left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+    .mat-icon {
+      padding-right: 3px;
+    }
+  }
+
+  .right-btn {
+    right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+    .mat-icon {
+      padding-left: 3px;
+    }
+  }
+}

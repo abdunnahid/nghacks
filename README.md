@@ -112,4 +112,16 @@ Image carousel for web page banner.
 [![npm](https://img.shields.io/npm/dw/@nghacks/banner-carousel)](https://www.npmjs.com/package/@nghacks/banner-carousel)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/abdunnahid/nghacks/npm-publish%20'banner-carousel'?label=build%20%27banner-carousel%27)
 
+---
+
+### [overflow-carousel](https://github.com/abdunnahid/nghacks/tree/master/main/projects/overflow-carousel)
+
+Show overflowing content as carousel.
+
+[Live Preview](https://ng-hack.web.app/overflow-carousel)
+
+[![npm (scoped)](https://img.shields.io/npm/v/@nghacks/overflow-carousel?color=%23c53635)](https://www.npmjs.com/package/@nghacks/overflow-carousel)
+[![npm](https://img.shields.io/npm/dw/@nghacks/overflow-carousel)](https://www.npmjs.com/package/@nghacks/overflow-carousel)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/abdunnahid/nghacks/npm-publish%20'overflow-carousel'?label=build%20%27overflow-carousel%27)
+
 

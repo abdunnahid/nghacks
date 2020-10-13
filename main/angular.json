@@ -451,6 +451,46 @@
           }
         }
       }
+    },
+    "overflow-carousel": {
+      "projectType": "library",
+      "root": "projects/overflow-carousel",
+      "sourceRoot": "projects/overflow-carousel/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/overflow-carousel/tsconfig.lib.json",
+            "project": "projects/overflow-carousel/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/overflow-carousel/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/overflow-carousel/src/test.ts",
+            "tsConfig": "projects/overflow-carousel/tsconfig.spec.json",
+            "karmaConfig": "projects/overflow-carousel/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/overflow-carousel/tsconfig.lib.json",
+              "projects/overflow-carousel/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "nghacks"

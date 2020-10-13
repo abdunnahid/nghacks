@@ -55,6 +55,10 @@
       "banner-carousel": [
         "dist/banner-carousel/banner-carousel",
         "dist/banner-carousel"
+      ],
+      "overflow-carousel": [
+        "dist/overflow-carousel/overflow-carousel",
+        "dist/overflow-carousel"
       ]
     }
   }

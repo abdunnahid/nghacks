@@ -55,5 +55,11 @@ export const Navigation: INavigation[] = [
     title: 'Banner Carousel',
     route: '/banner-carousel',
     icon: ''
+  },
+  {
+    id: 'overflow-carousel',
+    title: 'Overflow Carousel',
+    route: '/overflow-carousel',
+    icon: ''
   }
 ];

@@ -1,0 +1,40 @@
+.nghacks-overflow-carousel {
+  box-sizing: border-box;
+  width: 100%;
+  flex: auto;
+  overflow-x: hidden;
+
+  position: relative;
+
+  .overflowing-carousel-container {
+    box-sizing: border-box;
+    display: flex;
+    width: max-content;
+    transition: transform .4s ease-in-out;
+  }
+
+  .left-btn,
+  .right-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0;
+    z-index: 2;
+
+    &:empty {
+      display: none;
+      // width: 48px;
+      // height: 100px;
+      // background: #ff0000;
+    }
+  }
+
+  .left-btn {
+    left: 0;
+  }
+
+  .right-btn {
+    right: 0;
+  }
+
+}

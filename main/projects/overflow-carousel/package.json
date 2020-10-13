@@ -1,0 +1,42 @@
+{
+  "name": "@nghacks/overflow-carousel",
+  "version": "1.0.0",
+  "description": "Show overflowing content as carousel.",
+  "keywords": [
+    "angular",
+    "material",
+    "AngularMaterial",
+    "nghacks",
+    "carousel",
+    "image",
+    "overflow",
+    "slider",
+    "list",
+    "horizontalList",
+    "ng",
+    "ngx",
+    "ngMat"
+  ],
+  "author": {
+    "name": "Abdun Nahid",
+    "email": "abdun.nahid@gmail.com",
+    "url": "https://abdun-nahid.web.app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abdunnahid/nghacks.git"
+  },
+  "homepage": "https://ng-hack.web.app",
+  "bugs": "https://github.com/abdunnahid/nghacks/issues",
+  "license": "MIT",
+  "private": false,
+  "peerDependencies": {
+    "@angular/common": "^10.0.5",
+    "@angular/core": "^10.0.5",
+    "angular-resize-event": "^2.0.0",
+    "rxjs": "~6.5.5"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}

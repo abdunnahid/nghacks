@@ -70,5 +70,14 @@ export const HomeCardListData = [
     npmUrl: 'https://www.npmjs.com/package/@nghacks/banner-carousel',
     badgeUrl: 'https://img.shields.io/npm/v/@nghacks/banner-carousel?color=%23c53635&style=for-the-badge',
     route: '/banner-carousel'
+  },
+  {
+    title: 'Overflow Carousel',
+    subtitle: 'Component',
+    content: 'Show overflowing content as carousel.',
+    blogUrl: '',
+    npmUrl: 'https://www.npmjs.com/package/@nghacks/overflow-carousel',
+    badgeUrl: 'https://img.shields.io/npm/v/@nghacks/overflow-carousel?color=%23c53635&style=for-the-badge',
+    route: '/overflow-carousel'
   }
 ];

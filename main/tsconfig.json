@@ -58,6 +58,12 @@
     },
     {
       "path": "./projects/banner-carousel/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/overflow-carousel/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/overflow-carousel/tsconfig.spec.json"
     }
   ],
 }
