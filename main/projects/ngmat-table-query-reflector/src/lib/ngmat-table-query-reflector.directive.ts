@@ -53,6 +53,7 @@ export class NgMatTableQueryReflectorDirective implements OnInit, OnDestroy {
       // Material Sort Issue: https://github.com/angular/components/issues/10242
       // Picked a hack from: https://github.com/angular/components/issues/10242#issuecomment-421490991
       const activeSortHeader = this.dataSource.sort.sortables.get(sortActiveColumn);
+      if (!activeSortHeader) { return; }
       activeSortHeader['_setAnimationTransitionState']({
         fromState: this.dataSource.sort.direction,
         toState: 'active',
