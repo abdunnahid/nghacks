@@ -57,7 +57,7 @@
     "@angular/router": "~10.0.4",
     "angular-resize-event": "^2.0.0",
     "ngx-markdown": "^10.1.0",
-    "prismjs": "^1.21.0",
+    "prismjs": "^1.27.0",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
